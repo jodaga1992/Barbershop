@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Barbershop.Domain2.Schedule>
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Barber.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HourStart)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HourEnd)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Barber.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HourStart)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HourEnd)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "EditSchedule", new { id = item.ScheduleId }, new { @class = "btn btn-warning" })
+                @Html.ActionLink("Add Schedule", "AddSchedule", new { id = item.BarberId }, new { @class = "btn btn-primary" })
+                @Html.ActionLink("Appointments", "IndexAppointments", new { id = item.ScheduleId }, new { @class = "btn btn-info" })
+            </td>
+        </tr>
+    }
+</table>
+
+@Html.ActionLink("Back to List", "Index",new { }, new { @class = "btn btn-info" })
