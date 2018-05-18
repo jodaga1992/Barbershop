@@ -8,11 +8,9 @@
     Title="Barbershop">
     <ContentPage.Content>
         <StackLayout
-
             BindingContext="{Binding Barbershops}"
             Padding="4">
             <ListView
-                
                 ItemsSource="{Binding Barbers}"
                 HasUnevenRows="True"
                 IsPullToRefreshEnabled="True"
@@ -23,10 +21,10 @@
                     <DataTemplate>
                         <ViewCell>
                             <Frame
-                                BackgroundColor=" #eaecee "
+                                BackgroundColor="#eaecee "
                                 CornerRadius="20"
                                 HasShadow="true"
-                                Margin="0">
+                                Margin="5">
                                 <Grid>
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*"/>
@@ -36,33 +34,32 @@
                                     <StackLayout
                                         Grid.Column="0">
                                         <controls:CircleImage
-                                        HorizontalOptions="Start"
-                                        WidthRequest="90"
-                                        Source="{Binding ImageFullPath}">
+                                            HorizontalOptions="Start"
+                                            WidthRequest="90"
+                                            Source="{Binding ImageFullPath}">
                                         </controls:CircleImage>
-
                                     </StackLayout>
                                     <StackLayout
-                                        Grid.Column="1">
+                                        Grid.Column="1"
+                                        VerticalOptions="Center">
                                         <Label
-                                        HorizontalOptions="CenterAndExpand"
-                                        Text="{Binding FullName}">
+                                            FontAttributes="Bold"
+                                            FontSize="Medium"
+                                            Text="{Binding FullName}"
+                                            TextColor="Black">
                                         </Label>
-
                                     </StackLayout>
                                     <Image
-                                    Grid.Column="2"
+                                        Grid.Column="2"
                                         HorizontalOptions="End"
                                         Source="ic_chevron_right">
                                     </Image>
-
                                 </Grid>
                             </Frame>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
