@@ -8,7 +8,7 @@ namespace Barbershop.Droid
 
     [Activity(
         Label = "Barbershop", 
-        Icon = "@drawable/icon", 
+        Icon = "@drawable/ic_logo", 
         Theme = "@style/MainTheme", 
         MainLauncher = false, 
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
