@@ -1,13 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿
 
-using Foundation;
-using ImageCircle.Forms.Plugin.iOS;
-using UIKit;
+
 
 namespace Barbershop.iOS
 {
+    using Foundation;
+    using ImageCircle.Forms.Plugin.iOS;
+    using Syncfusion.SfBusyIndicator.XForms.iOS;
+    using UIKit;
+
     // The UIApplicationDelegate for the application. This class is responsible for launching the 
     // User Interface of the application, as well as listening (and optionally responding) to 
     // application events from iOS.
@@ -24,6 +25,7 @@ namespace Barbershop.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            new SfBusyIndicatorRenderer();
             ImageCircleRenderer.Init();
             LoadApplication(new App());
         
