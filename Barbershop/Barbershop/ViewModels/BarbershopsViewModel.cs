@@ -21,13 +21,14 @@ namespace Barbershop.ViewModels
         #endregion
 
         #region Attributes
-        private ObservableCollection<BarberResponse> barbers;
+        private ObservableCollection<BarberItemViewModel> barbers;
+        private List<BarberResponse> list;
         private bool isRefreshing;
         private string filter;
         #endregion
 
         #region Properties
-        public ObservableCollection<BarberResponse> Barbers
+        public ObservableCollection<BarberItemViewModel> Barbers
         {
             get { return this.barbers; }
             set { SetValue(ref this.barbers, value); }
@@ -93,11 +94,28 @@ namespace Barbershop.ViewModels
                 return;
             }
 
-            var list = (List<BarberResponse>)response.Result;
-            this.Barbers = new ObservableCollection<BarberResponse>(list);
+            this.list = (List<BarberResponse>)response.Result;
+            this.Barbers = new ObservableCollection<BarberItemViewModel>(
+                this.ToBarberItemViewModel());
             this.IsRefreshing = false;
         }
-        
+
+        private IEnumerable<BarberItemViewModel> ToBarberItemViewModel()
+        {
+            return list.Select(l => new BarberItemViewModel
+            {
+                BarberId = l.BarberId,
+                FirstName = l.FirstName,
+                LastName = l.LastName,
+                Email = l.Email,
+                Telephone = l.Telephone,
+                ImagePath = l.ImagePath,
+                Password = l.Password,
+                ImageFullPath = l.ImageFullPath,
+                FullName = l.FullName
+            });
+        }
+
         #endregion
 
         #region Commands

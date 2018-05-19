@@ -44,6 +44,9 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\BarberPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\BarbershopLandTabbedPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

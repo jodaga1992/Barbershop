@@ -6,10 +6,18 @@ namespace Barbershop
     using Helpers;
     using ViewModels;
     using Views;
+    using System;
+
     public partial class App : Application
     {
         #region Properties
         public static NavigationPage Navigator
+        {
+            get;
+            internal set;
+        }
+
+        public static MasterPage Master
         {
             get;
             internal set;
@@ -40,6 +48,13 @@ namespace Barbershop
         #endregion
 
         #region Methods
+        public static Action HideLoginView
+        {
+            get
+            {
+                return new Action(() => App.Current.MainPage = new NavigationPage(new LoginPage()));
+            }
+        }
         protected override void OnStart()
         {
             // Handle when your app starts

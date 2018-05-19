@@ -1,6 +1,4 @@
-﻿
-
-namespace Barbershop.Models
+﻿namespace Barbershop.Models
 {
     using Newtonsoft.Json;
 

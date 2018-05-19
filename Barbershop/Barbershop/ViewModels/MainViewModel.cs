@@ -20,6 +20,12 @@ namespace Barbershop.ViewModels
             get;
             set;
         }
+
+        public string SelectedModule
+        {
+            get;
+            set;
+        }
         #endregion
 
         #region ViewModels
@@ -36,6 +42,12 @@ namespace Barbershop.ViewModels
         }
 
         public RegisterViewModel Register
+        {
+            get;
+            set;
+        }
+
+        public BarberViewModel Barber
         {
             get;
             set;
