@@ -40,6 +40,11 @@ namespace Barbershop.ViewModels
                 mainViewModel.TokenType = string.Empty;
                 Application.Current.MainPage = new LoginPage();
             }
+            else if (this.PageName == "MyProfilePage")
+            {
+                MainViewModel.GetInstance().MyProfile = new MyProfileViewModel();
+                App.Navigator.PushAsync(new MyProfilePage());
+            }
         }
         #endregion
     }
