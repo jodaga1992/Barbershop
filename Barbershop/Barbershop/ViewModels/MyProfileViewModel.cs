@@ -1,18 +1,24 @@
 ﻿
 namespace Barbershop.ViewModels
 {
-    using Models;
-    using Services;
-    using Xamarin.Forms;
-    using Plugin.Media.Abstractions;
+    using System;
+
     using System.Windows.Input;
     using GalaSoft.MvvmLight.Command;
+    using Helpers;
+    using Models;
     using Plugin.Media;
+    using Plugin.Media.Abstractions;
+    using Services;
+    using Views;
+    using Xamarin.Forms;
 
     public class MyProfileViewModel : BaseViewModel
     {
         #region Services
         private ApiService apiService;
+
+        private DataService dataService;
         #endregion
 
         #region Attributes
@@ -53,6 +59,7 @@ namespace Barbershop.ViewModels
         public MyProfileViewModel()
         {
             this.apiService = new ApiService();
+            this.dataService = new DataService();
             this.User = MainViewModel.GetInstance().User;
             this.ImageSource = this.User.ImageFullPath;
             this.IsEnabled = true;
@@ -117,6 +124,124 @@ namespace Barbershop.ViewModels
                     return stream;
                 });
             }
+        }
+
+        public ICommand SaveCommand
+        {
+            get
+            {
+                return new RelayCommand(Save);
+            }
+        }
+
+        private async void Save()
+        {
+            if (string.IsNullOrEmpty(this.User.FirstName))
+            {
+                await Application.Current.MainPage.DisplayAlert(
+                    Languages.Error,
+                    "You must enter a first name",
+                    Languages.Accept);
+                return;
+            }
+
+            if (string.IsNullOrEmpty(this.User.LastName))
+            {
+                await Application.Current.MainPage.DisplayAlert(
+                    Languages.Error,
+                    "Last Name",
+                    Languages.Accept);
+                return;
+            }
+
+            if (string.IsNullOrEmpty(this.User.Email))
+            {
+                await Application.Current.MainPage.DisplayAlert(
+                    Languages.Error,
+                    Languages.EmailValidation,
+                    Languages.Accept);
+                return;
+            }
+
+            if (!RegexUtilities.IsValidEmail(this.User.Email))
+            {
+                await Application.Current.MainPage.DisplayAlert(
+                    Languages.Error,
+                    "You must enter a valid email.",
+                    Languages.Accept);
+                return;
+            }
+
+            if (string.IsNullOrEmpty(this.User.Telephone))
+            {
+                await Application.Current.MainPage.DisplayAlert(
+                    Languages.Error,
+                    "You must enter a phone.",
+                    Languages.Accept);
+                return;
+            }
+
+
+            this.IsRunning = true;
+            this.IsEnabled = false;
+
+            var checkConnetion = await this.apiService.CheckConnection();
+            if (!checkConnetion.IsSuccess)
+            {
+                this.IsRunning = false;
+                this.IsEnabled = true;
+                await Application.Current.MainPage.DisplayAlert(
+                    Languages.Error,
+                    checkConnetion.Message,
+                    Languages.Accept);
+                return;
+            }
+
+            byte[] imageArray = null;
+            if (this.file != null)
+            {
+                imageArray = FilesHelper.ReadFully(this.file.GetStream());
+            }
+
+            var userDomain = Converter.ToUserDomain(this.User, imageArray);
+            var apiSecurity = Application.Current.Resources["APISecurity"].ToString();
+            var response = await this.apiService.Put(
+                apiSecurity,
+                "/api",
+                "/Users",
+                MainViewModel.GetInstance().Token.TokenType,
+                MainViewModel.GetInstance().Token.AccessToken,
+                userDomain);
+
+            if (!response.IsSuccess)
+            {
+                this.IsRunning = false;
+                this.IsEnabled = true;
+                await Application.Current.MainPage.DisplayAlert(
+                    Languages.Error,
+                    response.Message,
+                    Languages.Accept);
+                return;
+            }
+
+
+            var userApi = await this.apiService.GetUserByEmail(
+            "http://barbershopgokuapi.azurewebsites.net",
+            "/api",
+            "/Users/GetUserByEmail",
+                MainViewModel.GetInstance().Token.TokenType,
+                MainViewModel.GetInstance().Token.AccessToken,
+            this.User.Email);
+            var userLocal = Converter.ToUserLocal(userApi);
+
+
+            MainViewModel.GetInstance().User = userLocal;
+            this.dataService.Update(userLocal);
+
+            this.IsRunning = false;
+            this.IsEnabled = true;
+
+            await App.Navigator.PopAsync();
         }
         #endregion
     }
