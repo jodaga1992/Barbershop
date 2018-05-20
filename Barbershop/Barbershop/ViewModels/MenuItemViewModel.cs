@@ -30,11 +30,13 @@ namespace Barbershop.ViewModels
 
         private void Navigate()
         {
+            App.Master.IsPresented = false;
             if (this.PageName == "LoginPage")
             {
-                Settings.Token = string.Empty;
-                Settings.TokenType = string.Empty;
+                Settings.IsRemembered = "false";
                 var mainViewModel = MainViewModel.GetInstance();
+                mainViewModel.Token = null;
+                mainViewModel.User = null;
                 mainViewModel.TokenType = string.Empty;
                 Application.Current.MainPage = new LoginPage();
             }

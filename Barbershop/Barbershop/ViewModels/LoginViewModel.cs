@@ -191,8 +191,6 @@
         {
            MainViewModel.GetInstance().Register = new RegisterViewModel();
            await Application.Current.MainPage.Navigation.PushAsync(new RegisterPage());
-
-           
         }
 
         #endregion

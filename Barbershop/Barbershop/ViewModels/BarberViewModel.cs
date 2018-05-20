@@ -7,6 +7,8 @@
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
     using System.Linq;
+    using System.Windows.Input;
+    using GalaSoft.MvvmLight.Command;
 
     public class BarberViewModel : BaseViewModel
     {
@@ -42,6 +44,16 @@
             this.apiService = new ApiService();
             this.Barber = barber;
             this.LoadSchedules();
+        }
+        #endregion
+
+        #region Commands
+        public ICommand RefreshCommand
+        {
+            get
+            {
+                return new RelayCommand(LoadSchedules);
+            }
         }
         #endregion
 
