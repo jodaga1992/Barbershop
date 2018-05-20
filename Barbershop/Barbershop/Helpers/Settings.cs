@@ -1,6 +1,4 @@
-﻿
-
-namespace Barbershop.Helpers
+﻿namespace Barbershop.Helpers
 {
     using Plugin.Settings;
     using Plugin.Settings.Abstractions;
@@ -15,6 +13,7 @@ namespace Barbershop.Helpers
             }
         }
 
+        const string isRemembered = "IsRemembered";
         const string token = "Token";
         const string tokenType = "TokenType";
         static readonly string stringDefault = string.Empty;
@@ -31,6 +30,17 @@ namespace Barbershop.Helpers
             }
         }
 
+        public static string IsRemembered
+        {
+            get
+            {
+                return AppSettings.GetValueOrDefault(isRemembered, stringDefault);
+            }
+            set
+            {
+                AppSettings.AddOrUpdateValue(isRemembered, value);
+            }
+        }
 
         public static string TokenType
         {

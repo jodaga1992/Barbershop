@@ -1,12 +1,12 @@
-﻿
-
-namespace Barbershop
+﻿namespace Barbershop
 {
     using Xamarin.Forms;
     using Helpers;
     using ViewModels;
     using Views;
     using System;
+    using Services;
+    using Models;
 
     public partial class App : Application
     {
@@ -28,22 +28,25 @@ namespace Barbershop
         public App()
         {
             InitializeComponent();
-            if (string.IsNullOrEmpty(Settings.Token))
+            if (Settings.IsRemembered != "true")
             {
                 this.MainPage = new NavigationPage(new LoginPage());
             }
             else
             {
-                var mainViewModel = MainViewModel.GetInstance();
-                mainViewModel.Token = Settings.Token;
-                mainViewModel.TokenType = Settings.TokenType;
-                mainViewModel.Barbershops = new BarbershopsViewModel();
-                this.MainPage = new MasterPage();
+                var dataService = new DataService();
+                var token = dataService.First<TokenResponse>(false);
+                if (token != null && token.Expires > DateTime.Now)
+                {
+                    var user = dataService.First<UserLocal>(false);
+                    var mainViewModel = MainViewModel.GetInstance();
+                    mainViewModel.Token = token;
+                    mainViewModel.User = user;
+                    mainViewModel.Barbershops = new BarbershopsViewModel();
+                    Application.Current.MainPage = new MasterPage();
+                }
 
             }
-
-            // this.MainPage = new NavigationPage(new LoginPage());
-            //this.MainPage = new MasterPage();
         }
         #endregion
 

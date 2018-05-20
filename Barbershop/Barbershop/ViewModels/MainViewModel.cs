@@ -7,11 +7,19 @@ namespace Barbershop.ViewModels
 
     using Models;
 
-    public class MainViewModel
+    public class MainViewModel : BaseViewModel
     {
+        #region Attibrutes
+        private UserLocal user;
+        #endregion
+
         #region Properties
 
-        public string Token { get; set; }
+        public TokenResponse Token
+        {
+            get;
+            set;
+        }
 
         public string TokenType { get; set; }
 
@@ -25,6 +33,12 @@ namespace Barbershop.ViewModels
         {
             get;
             set;
+        }
+
+        public UserLocal User
+        {
+            get { return this.user; }
+            set { SetValue(ref this.user, value); }
         }
         #endregion
 

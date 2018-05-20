@@ -1,7 +1,4 @@
-﻿
-
-
-namespace Barbershop.ViewModels
+﻿namespace Barbershop.ViewModels
 {
     using Helpers;
     using GalaSoft.MvvmLight.Command;
@@ -15,6 +12,7 @@ namespace Barbershop.ViewModels
     {
         #region Services
         private ApiService apiService;
+        private DataService dataService;
         #endregion
 
         #region Attributes
@@ -60,7 +58,7 @@ namespace Barbershop.ViewModels
         public LoginViewModel()
         {
             this.apiService = new ApiService();
-
+            this.dataService = new DataService();
             this.IsRemembered = true;
             this.IsEnabled = true;
 
@@ -143,24 +141,40 @@ namespace Barbershop.ViewModels
                 return;
             }
 
+            var user = await this.apiService.GetUserByEmail(
+               "http://barbershopgokuapi.azurewebsites.net",
+               "/api",
+               "/Users/GetUserByEmail",
+               token.TokenType,
+               token.AccessToken,
+               this.Email);
+
+            var userLocal = Converter.ToUserLocal(user);
+            userLocal.Password = this.Password;
+
             var mainViewModel = MainViewModel.GetInstance();
-            mainViewModel.Token = token.AccessToken;
-            mainViewModel.TokenType = token.TokenType;
+            mainViewModel.Token = token;
+            mainViewModel.User = userLocal;
 
             if (this.IsRemembered)
             {
-                Settings.Token = token.AccessToken;
-                Settings.TokenType = token.TokenType;
+                Settings.IsRemembered = "true";
             }
+            else
+            {
+                Settings.IsRemembered = "false";
+            }
+
+            this.dataService.DeleteAllAndInsert(userLocal);
+            this.dataService.DeleteAllAndInsert(token);
+            
+            this.IsRunning = false;
+            this.IsEnabled = true;
+            this.Email = string.Empty;
+            this.Password = string.Empty;
 
             mainViewModel.Barbershops = new BarbershopsViewModel();
             Application.Current.MainPage = new MasterPage();
-
-            this.IsRunning = false;
-            this.IsEnabled = true;
-
-            this.Email = string.Empty;
-            this.Password = string.Empty;
 
         }
 

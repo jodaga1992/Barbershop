@@ -35,7 +35,6 @@ namespace Barbershop.ViewModels
                 Settings.Token = string.Empty;
                 Settings.TokenType = string.Empty;
                 var mainViewModel = MainViewModel.GetInstance();
-                mainViewModel.Token = string.Empty;
                 mainViewModel.TokenType = string.Empty;
                 Application.Current.MainPage = new LoginPage();
             }

@@ -26,6 +26,8 @@ namespace Barbershop.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::Barbershop.Droid.Resource.String.ApplicationName;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::Barbershop.Droid.Resource.String.Hello;
 			global::Com.Syncfusion.Sfbusyindicator.Resource.String.library_name = global::Barbershop.Droid.Resource.String.library_name;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Barbershop.Droid.Resource.Attribute.actionBarSize;
 		}
@@ -3652,6 +3654,12 @@ namespace Barbershop.Droid
 		
 		public partial class String
 		{
+			
+			// aapt resource value: 0x7f090040
+			public const int ApplicationName = 2131296320;
+			
+			// aapt resource value: 0x7f09003f
+			public const int Hello = 2131296319;
 			
 			// aapt resource value: 0x7f090015
 			public const int abc_action_bar_home_description = 2131296277;

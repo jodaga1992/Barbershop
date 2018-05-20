@@ -1,5 +1,4 @@
-﻿
-namespace Barbershop.Droid
+﻿namespace Barbershop.Droid
 {
 
     using Android.App;
