@@ -28,17 +28,23 @@ namespace Barbershop.ViewModels
 
         }
 
-        private void Navigate()
-        {
+        private async void Navigate()
+        {            
             App.Master.IsPresented = false;
             if (this.PageName == "LoginPage")
             {
-                Settings.IsRemembered = "false";
-                var mainViewModel = MainViewModel.GetInstance();
-                mainViewModel.Token = null;
-                mainViewModel.User = null;
-                mainViewModel.TokenType = string.Empty;
-                Application.Current.MainPage = new LoginPage();
+                var answer = await Application.Current.MainPage.DisplayAlert(
+                "Confirmacion", "¿Seguro que desea salir", "Si", "No");
+                if (answer)
+                {
+                    Settings.IsRemembered = "false";
+                    var mainViewModel = MainViewModel.GetInstance();
+                    mainViewModel.Token = null;
+                    mainViewModel.User = null;
+                    mainViewModel.TokenType = string.Empty;
+                    Application.Current.MainPage = new LoginPage();
+                }
+                
             }
             else if (this.PageName == "MyProfilePage")
             {
