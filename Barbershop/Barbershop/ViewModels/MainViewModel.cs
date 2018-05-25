@@ -21,6 +21,7 @@ namespace Barbershop.ViewModels
             set;
         }
 
+        //DESAPARECE PARA CCAMBIO DE PASSWORD
         public string TokenType { get; set; }
 
         public ObservableCollection<MenuItemViewModel> Menus
@@ -68,6 +69,12 @@ namespace Barbershop.ViewModels
         }
 
         public MyProfileViewModel MyProfile
+        {
+            get;
+            set;
+        }
+
+        public ChangePasswordViewModel ChangePassword
         {
             get;
             set;

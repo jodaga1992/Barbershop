@@ -17,7 +17,6 @@ namespace Barbershop.ViewModels
     {
         #region Services
         private ApiService apiService;
-
         private DataService dataService;
         #endregion
 
@@ -67,6 +66,20 @@ namespace Barbershop.ViewModels
         #endregion
 
         #region Commands
+        public ICommand ChangePasswordCommand
+        {
+            get
+            {
+                return new RelayCommand(ChangePassword);
+            }
+        }
+
+        private async void ChangePassword()
+        {
+            MainViewModel.GetInstance().ChangePassword = new ChangePasswordViewModel();
+            await App.Navigator.PushAsync(new ChangePasswordPage());
+        }
+
         public ICommand ChangeImageCommand
         {
             get

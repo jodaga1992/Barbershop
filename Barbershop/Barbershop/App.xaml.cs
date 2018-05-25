@@ -45,9 +45,10 @@
                     mainViewModel.Barbershops = new BarbershopsViewModel();
                     Application.Current.MainPage = new MasterPage();
                 }
-
             }
         }
+
+        
         #endregion
 
         #region Methods
