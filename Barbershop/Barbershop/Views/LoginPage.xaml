@@ -3,6 +3,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"      
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+    xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms"
     x:Class="Barbershop.Views.LoginPage"
     BindingContext="{Binding Main, Source={StaticResource Locator}}"
     Title="Login">
@@ -99,14 +100,29 @@
                                 Text="Register">
                             </Button>
                     </StackLayout>
-                    <StackLayout
+                    <!--<StackLayout
                         HorizontalOptions="Center"
                         Orientation="Horizontal"
                         VerticalOptions="EndAndExpand">
-                            <Image
+                        <Image
                                 Source="logo_facebook"
                                 WidthRequest="80">
-                            </Image>
+                        </Image>
+                    </StackLayout>-->
+                    <StackLayout>
+                        <radialMenu:SfRadialMenu x:Name="radialMenu" LayoutType="Custom" CenterButtonRadius="24"  RimColor="Transparent" RimRadius="150" CenterButtonBackgroundColor="Transparent" CenterButtonBorderColor="Transparent" CenterButtonBorderThickness="3">
+                            <radialMenu:SfRadialMenu.CenterButtonView>
+                                <Image x:Name="centerButtonImage" HeightRequest="22" WidthRequest="22"  Source="ic_chevron_right.png" Aspect="AspectFill" />
+                            </radialMenu:SfRadialMenu.CenterButtonView>
+                            <radialMenu:SfRadialMenu.Items>
+                                <radialMenu:SfRadialMenuItem Text="facebook" TextColor="Transparent" ItemTapped="Prueba" Image="logo_facebook" ItemHeight="50" ItemWidth="50">
+                                </radialMenu:SfRadialMenuItem>
+                                <radialMenu:SfRadialMenuItem Text="exit" TextColor="Transparent" ItemTapped="Prueba" Image="exit" ItemHeight="50" ItemWidth="50">
+                                </radialMenu:SfRadialMenuItem>
+                                <radialMenu:SfRadialMenuItem Text="gra" TextColor="Transparent" ItemTapped="Prueba" Image="grafig" ItemHeight="50" ItemWidth="50">
+                                </radialMenu:SfRadialMenuItem>
+                            </radialMenu:SfRadialMenu.Items>
+                        </radialMenu:SfRadialMenu>
                     </StackLayout>
                 </StackLayout>
                 <busyindicator:SfBusyIndicator
