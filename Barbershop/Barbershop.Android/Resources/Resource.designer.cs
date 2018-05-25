@@ -29,6 +29,73 @@ namespace Barbershop.Droid
 			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::Barbershop.Droid.Resource.String.ApplicationName;
 			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::Barbershop.Droid.Resource.String.Hello;
 			global::Com.Syncfusion.Sfbusyindicator.Resource.String.library_name = global::Barbershop.Droid.Resource.String.library_name;
+			global::Syncfusion.Android.ProgressBar.Resource.Attribute.animationDuration = global::Barbershop.Droid.Resource.Attribute.animationDuration;
+			global::Syncfusion.Android.ProgressBar.Resource.Attribute.cornerRadius = global::Barbershop.Droid.Resource.Attribute.cornerRadius;
+			global::Syncfusion.Android.ProgressBar.Resource.Attribute.endAngle = global::Barbershop.Droid.Resource.Attribute.endAngle;
+			global::Syncfusion.Android.ProgressBar.Resource.Attribute.gapWidth = global::Barbershop.Droid.Resource.Attribute.gapWidth;
+			global::Syncfusion.Android.ProgressBar.Resource.Attribute.indeterminateAnimationDuration = global::Barbershop.Droid.Resource.Attribute.indeterminateAnimationDuration;
+			global::Syncfusion.Android.ProgressBar.Resource.Attribute.indicatorInnerRadius = global::Barbershop.Droid.Resource.Attribute.indicatorInnerRadius;
+			global::Syncfusion.Android.ProgressBar.Resource.Attribute.indicatorOuterRadius = global::Barbershop.Droid.Resource.Attribute.indicatorOuterRadius;
+			global::Syncfusion.Android.ProgressBar.Resource.Attribute.indicatorPaddingBottom = global::Barbershop.Droid.Resource.Attribute.indicatorPaddingBottom;
+			global::Syncfusion.Android.ProgressBar.Resource.Attribute.indicatorPaddingLeft = global::Barbershop.Droid.Resource.Attribute.indicatorPaddingLeft;
+			global::Syncfusion.Android.ProgressBar.Resource.Attribute.indicatorPaddingRight = global::Barbershop.Droid.Resource.Attribute.indicatorPaddingRight;
+			global::Syncfusion.Android.ProgressBar.Resource.Attribute.indicatorPaddingTop = global::Barbershop.Droid.Resource.Attribute.indicatorPaddingTop;
+			global::Syncfusion.Android.ProgressBar.Resource.Attribute.isIndeterminate = global::Barbershop.Droid.Resource.Attribute.isIndeterminate;
+			global::Syncfusion.Android.ProgressBar.Resource.Attribute.maximum = global::Barbershop.Droid.Resource.Attribute.maximum;
+			global::Syncfusion.Android.ProgressBar.Resource.Attribute.minimum = global::Barbershop.Droid.Resource.Attribute.minimum;
+			global::Syncfusion.Android.ProgressBar.Resource.Attribute.progress = global::Barbershop.Droid.Resource.Attribute.progress;
+			global::Syncfusion.Android.ProgressBar.Resource.Attribute.progressColor = global::Barbershop.Droid.Resource.Attribute.progressColor;
+			global::Syncfusion.Android.ProgressBar.Resource.Attribute.secondaryAnimationDuration = global::Barbershop.Droid.Resource.Attribute.secondaryAnimationDuration;
+			global::Syncfusion.Android.ProgressBar.Resource.Attribute.secondaryProgress = global::Barbershop.Droid.Resource.Attribute.secondaryProgress;
+			global::Syncfusion.Android.ProgressBar.Resource.Attribute.secondaryProgressColor = global::Barbershop.Droid.Resource.Attribute.secondaryProgressColor;
+			global::Syncfusion.Android.ProgressBar.Resource.Attribute.segmentCount = global::Barbershop.Droid.Resource.Attribute.segmentCount;
+			global::Syncfusion.Android.ProgressBar.Resource.Attribute.showProgressValue = global::Barbershop.Droid.Resource.Attribute.showProgressValue;
+			global::Syncfusion.Android.ProgressBar.Resource.Attribute.startAngle = global::Barbershop.Droid.Resource.Attribute.startAngle;
+			global::Syncfusion.Android.ProgressBar.Resource.Attribute.trackColor = global::Barbershop.Droid.Resource.Attribute.trackColor;
+			global::Syncfusion.Android.ProgressBar.Resource.Attribute.trackHeight = global::Barbershop.Droid.Resource.Attribute.trackHeight;
+			global::Syncfusion.Android.ProgressBar.Resource.Attribute.trackInnerRadius = global::Barbershop.Droid.Resource.Attribute.trackInnerRadius;
+			global::Syncfusion.Android.ProgressBar.Resource.Attribute.trackOuterRadius = global::Barbershop.Droid.Resource.Attribute.trackOuterRadius;
+			global::Syncfusion.Android.ProgressBar.Resource.Drawable.sfprogressbar_determinate_linear = global::Barbershop.Droid.Resource.Drawable.sfprogressbar_determinate_linear;
+			global::Syncfusion.Android.ProgressBar.Resource.Drawable.sfprogressbar_indeterminate_circular = global::Barbershop.Droid.Resource.Drawable.sfprogressbar_indeterminate_circular;
+			global::Syncfusion.Android.ProgressBar.Resource.Drawable.sfprogressbar_indeterminate_linear = global::Barbershop.Droid.Resource.Drawable.sfprogressbar_indeterminate_linear;
+			global::Syncfusion.Android.ProgressBar.Resource.Id.sfprogressbar_progress = global::Barbershop.Droid.Resource.Id.sfprogressbar_progress;
+			global::Syncfusion.Android.ProgressBar.Resource.Id.sfprogressbar_secondary_progress = global::Barbershop.Droid.Resource.Id.sfprogressbar_secondary_progress;
+			global::Syncfusion.Android.ProgressBar.Resource.Id.sfprogressbar_track = global::Barbershop.Droid.Resource.Id.sfprogressbar_track;
+			global::Syncfusion.Android.ProgressBar.Resource.String.library_name = global::Barbershop.Droid.Resource.String.library_name;
+			global::Syncfusion.Android.ProgressBar.Resource.Styleable.SfProgressBar = global::Barbershop.Droid.Resource.Styleable.SfProgressBar;
+			global::Syncfusion.Android.ProgressBar.Resource.Styleable.SfProgressBar_animationDuration = global::Barbershop.Droid.Resource.Styleable.SfProgressBar_animationDuration;
+			global::Syncfusion.Android.ProgressBar.Resource.Styleable.SfProgressBar_cornerRadius = global::Barbershop.Droid.Resource.Styleable.SfProgressBar_cornerRadius;
+			global::Syncfusion.Android.ProgressBar.Resource.Styleable.SfProgressBar_endAngle = global::Barbershop.Droid.Resource.Styleable.SfProgressBar_endAngle;
+			global::Syncfusion.Android.ProgressBar.Resource.Styleable.SfProgressBar_gapWidth = global::Barbershop.Droid.Resource.Styleable.SfProgressBar_gapWidth;
+			global::Syncfusion.Android.ProgressBar.Resource.Styleable.SfProgressBar_indeterminateAnimationDuration = global::Barbershop.Droid.Resource.Styleable.SfProgressBar_indeterminateAnimationDuration;
+			global::Syncfusion.Android.ProgressBar.Resource.Styleable.SfProgressBar_indicatorInnerRadius = global::Barbershop.Droid.Resource.Styleable.SfProgressBar_indicatorInnerRadius;
+			global::Syncfusion.Android.ProgressBar.Resource.Styleable.SfProgressBar_indicatorOuterRadius = global::Barbershop.Droid.Resource.Styleable.SfProgressBar_indicatorOuterRadius;
+			global::Syncfusion.Android.ProgressBar.Resource.Styleable.SfProgressBar_indicatorPaddingBottom = global::Barbershop.Droid.Resource.Styleable.SfProgressBar_indicatorPaddingBottom;
+			global::Syncfusion.Android.ProgressBar.Resource.Styleable.SfProgressBar_indicatorPaddingLeft = global::Barbershop.Droid.Resource.Styleable.SfProgressBar_indicatorPaddingLeft;
+			global::Syncfusion.Android.ProgressBar.Resource.Styleable.SfProgressBar_indicatorPaddingRight = global::Barbershop.Droid.Resource.Styleable.SfProgressBar_indicatorPaddingRight;
+			global::Syncfusion.Android.ProgressBar.Resource.Styleable.SfProgressBar_indicatorPaddingTop = global::Barbershop.Droid.Resource.Styleable.SfProgressBar_indicatorPaddingTop;
+			global::Syncfusion.Android.ProgressBar.Resource.Styleable.SfProgressBar_isIndeterminate = global::Barbershop.Droid.Resource.Styleable.SfProgressBar_isIndeterminate;
+			global::Syncfusion.Android.ProgressBar.Resource.Styleable.SfProgressBar_maximum = global::Barbershop.Droid.Resource.Styleable.SfProgressBar_maximum;
+			global::Syncfusion.Android.ProgressBar.Resource.Styleable.SfProgressBar_minimum = global::Barbershop.Droid.Resource.Styleable.SfProgressBar_minimum;
+			global::Syncfusion.Android.ProgressBar.Resource.Styleable.SfProgressBar_progress = global::Barbershop.Droid.Resource.Styleable.SfProgressBar_progress;
+			global::Syncfusion.Android.ProgressBar.Resource.Styleable.SfProgressBar_progressColor = global::Barbershop.Droid.Resource.Styleable.SfProgressBar_progressColor;
+			global::Syncfusion.Android.ProgressBar.Resource.Styleable.SfProgressBar_secondaryAnimationDuration = global::Barbershop.Droid.Resource.Styleable.SfProgressBar_secondaryAnimationDuration;
+			global::Syncfusion.Android.ProgressBar.Resource.Styleable.SfProgressBar_secondaryProgress = global::Barbershop.Droid.Resource.Styleable.SfProgressBar_secondaryProgress;
+			global::Syncfusion.Android.ProgressBar.Resource.Styleable.SfProgressBar_secondaryProgressColor = global::Barbershop.Droid.Resource.Styleable.SfProgressBar_secondaryProgressColor;
+			global::Syncfusion.Android.ProgressBar.Resource.Styleable.SfProgressBar_segmentCount = global::Barbershop.Droid.Resource.Styleable.SfProgressBar_segmentCount;
+			global::Syncfusion.Android.ProgressBar.Resource.Styleable.SfProgressBar_showProgressValue = global::Barbershop.Droid.Resource.Styleable.SfProgressBar_showProgressValue;
+			global::Syncfusion.Android.ProgressBar.Resource.Styleable.SfProgressBar_startAngle = global::Barbershop.Droid.Resource.Styleable.SfProgressBar_startAngle;
+			global::Syncfusion.Android.ProgressBar.Resource.Styleable.SfProgressBar_trackColor = global::Barbershop.Droid.Resource.Styleable.SfProgressBar_trackColor;
+			global::Syncfusion.Android.ProgressBar.Resource.Styleable.SfProgressBar_trackHeight = global::Barbershop.Droid.Resource.Styleable.SfProgressBar_trackHeight;
+			global::Syncfusion.Android.ProgressBar.Resource.Styleable.SfProgressBar_trackInnerRadius = global::Barbershop.Droid.Resource.Styleable.SfProgressBar_trackInnerRadius;
+			global::Syncfusion.Android.ProgressBar.Resource.Styleable.SfProgressBar_trackOuterRadius = global::Barbershop.Droid.Resource.Styleable.SfProgressBar_trackOuterRadius;
+			global::Syncfusion.XForms.Android.ProgressBar.Resource.Drawable.sfprogressbar_determinate_linear = global::Barbershop.Droid.Resource.Drawable.sfprogressbar_determinate_linear;
+			global::Syncfusion.XForms.Android.ProgressBar.Resource.Drawable.sfprogressbar_indeterminate_circular = global::Barbershop.Droid.Resource.Drawable.sfprogressbar_indeterminate_circular;
+			global::Syncfusion.XForms.Android.ProgressBar.Resource.Drawable.sfprogressbar_indeterminate_linear = global::Barbershop.Droid.Resource.Drawable.sfprogressbar_indeterminate_linear;
+			global::Syncfusion.XForms.Android.ProgressBar.Resource.Id.sfprogressbar_progress = global::Barbershop.Droid.Resource.Id.sfprogressbar_progress;
+			global::Syncfusion.XForms.Android.ProgressBar.Resource.Id.sfprogressbar_secondary_progress = global::Barbershop.Droid.Resource.Id.sfprogressbar_secondary_progress;
+			global::Syncfusion.XForms.Android.ProgressBar.Resource.Id.sfprogressbar_track = global::Barbershop.Droid.Resource.Id.sfprogressbar_track;
+			global::Syncfusion.XForms.Android.ProgressBar.Resource.String.library_name = global::Barbershop.Droid.Resource.String.library_name;
 			global::Syncfusion.SfRadialMenu.Android.Resource.String.library_name = global::Barbershop.Droid.Resource.String.library_name;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Barbershop.Droid.Resource.Attribute.actionBarSize;
 		}
@@ -233,6 +300,9 @@ namespace Barbershop.Droid
 			// aapt resource value: 0x7f0100bd
 			public const int alpha = 2130772157;
 			
+			// aapt resource value: 0x7f01015d
+			public const int animationDuration = 2130772317;
+			
 			// aapt resource value: 0x7f0100c4
 			public const int arrowHeadLength = 2130772164;
 			
@@ -434,6 +504,9 @@ namespace Barbershop.Droid
 			// aapt resource value: 0x7f0100a4
 			public const int controlBackground = 2130772132;
 			
+			// aapt resource value: 0x7f010167
+			public const int cornerRadius = 2130772327;
+			
 			// aapt resource value: 0x7f01014b
 			public const int counterEnabled = 2130772299;
 			
@@ -497,6 +570,9 @@ namespace Barbershop.Droid
 			// aapt resource value: 0x7f010038
 			public const int elevation = 2130772024;
 			
+			// aapt resource value: 0x7f010169
+			public const int endAngle = 2130772329;
+			
 			// aapt resource value: 0x7f010149
 			public const int errorEnabled = 2130772297;
 			
@@ -542,6 +618,9 @@ namespace Barbershop.Droid
 			// aapt resource value: 0x7f0100c3
 			public const int gapBetweenBars = 2130772163;
 			
+			// aapt resource value: 0x7f010163
+			public const int gapWidth = 2130772323;
+			
 			// aapt resource value: 0x7f0100da
 			public const int goIcon = 2130772186;
 			
@@ -578,14 +657,38 @@ namespace Barbershop.Droid
 			// aapt resource value: 0x7f010089
 			public const int imageButtonStyle = 2130772105;
 			
+			// aapt resource value: 0x7f01015c
+			public const int indeterminateAnimationDuration = 2130772316;
+			
 			// aapt resource value: 0x7f01002e
 			public const int indeterminateProgressStyle = 2130772014;
+			
+			// aapt resource value: 0x7f01016e
+			public const int indicatorInnerRadius = 2130772334;
+			
+			// aapt resource value: 0x7f01016d
+			public const int indicatorOuterRadius = 2130772333;
+			
+			// aapt resource value: 0x7f010161
+			public const int indicatorPaddingBottom = 2130772321;
+			
+			// aapt resource value: 0x7f01015e
+			public const int indicatorPaddingLeft = 2130772318;
+			
+			// aapt resource value: 0x7f01015f
+			public const int indicatorPaddingRight = 2130772319;
+			
+			// aapt resource value: 0x7f010160
+			public const int indicatorPaddingTop = 2130772320;
 			
 			// aapt resource value: 0x7f01003b
 			public const int initialActivityCount = 2130772027;
 			
 			// aapt resource value: 0x7f010134
 			public const int insetForeground = 2130772276;
+			
+			// aapt resource value: 0x7f01015b
+			public const int isIndeterminate = 2130772315;
 			
 			// aapt resource value: 0x7f01001e
 			public const int isLightTheme = 2130771998;
@@ -689,6 +792,9 @@ namespace Barbershop.Droid
 			// aapt resource value: 0x7f0100f5
 			public const int maxButtonHeight = 2130772213;
 			
+			// aapt resource value: 0x7f01015a
+			public const int maximum = 2130772314;
+			
 			// aapt resource value: 0x7f0100c8
 			public const int measureWithLargestChild = 2130772168;
 			
@@ -730,6 +836,9 @@ namespace Barbershop.Droid
 			
 			// aapt resource value: 0x7f01012e
 			public const int menu = 2130772270;
+			
+			// aapt resource value: 0x7f010159
+			public const int minimum = 2130772313;
 			
 			// aapt resource value: 0x7f01003f
 			public const int multiChoiceItemLayout = 2130772031;
@@ -797,11 +906,17 @@ namespace Barbershop.Droid
 			// aapt resource value: 0x7f010129
 			public const int pressedTranslationZ = 2130772265;
 			
+			// aapt resource value: 0x7f010155
+			public const int progress = 2130772309;
+			
 			// aapt resource value: 0x7f01002f
 			public const int progressBarPadding = 2130772015;
 			
 			// aapt resource value: 0x7f01002d
 			public const int progressBarStyle = 2130772013;
+			
+			// aapt resource value: 0x7f010156
+			public const int progressColor = 2130772310;
 			
 			// aapt resource value: 0x7f0100e0
 			public const int queryBackground = 2130772192;
@@ -842,8 +957,20 @@ namespace Barbershop.Droid
 			// aapt resource value: 0x7f01008d
 			public const int searchViewStyle = 2130772109;
 			
+			// aapt resource value: 0x7f010166
+			public const int secondaryAnimationDuration = 2130772326;
+			
+			// aapt resource value: 0x7f010164
+			public const int secondaryProgress = 2130772324;
+			
+			// aapt resource value: 0x7f010165
+			public const int secondaryProgressColor = 2130772325;
+			
 			// aapt resource value: 0x7f0100b8
 			public const int seekBarStyle = 2130772152;
+			
+			// aapt resource value: 0x7f010162
+			public const int segmentCount = 2130772322;
 			
 			// aapt resource value: 0x7f01007d
 			public const int selectableItemBackground = 2130772093;
@@ -856,6 +983,9 @@ namespace Barbershop.Droid
 			
 			// aapt resource value: 0x7f0100c9
 			public const int showDividers = 2130772169;
+			
+			// aapt resource value: 0x7f01016a
+			public const int showProgressValue = 2130772330;
 			
 			// aapt resource value: 0x7f0100ec
 			public const int showText = 2130772204;
@@ -886,6 +1016,9 @@ namespace Barbershop.Droid
 			
 			// aapt resource value: 0x7f010003
 			public const int stackFromEnd = 2130771971;
+			
+			// aapt resource value: 0x7f010168
+			public const int startAngle = 2130772328;
 			
 			// aapt resource value: 0x7f0100d2
 			public const int state_above_anchor = 2130772178;
@@ -1093,6 +1226,18 @@ namespace Barbershop.Droid
 			
 			// aapt resource value: 0x7f0100e4
 			public const int track = 2130772196;
+			
+			// aapt resource value: 0x7f010157
+			public const int trackColor = 2130772311;
+			
+			// aapt resource value: 0x7f010158
+			public const int trackHeight = 2130772312;
+			
+			// aapt resource value: 0x7f01016c
+			public const int trackInnerRadius = 2130772332;
+			
+			// aapt resource value: 0x7f01016b
+			public const int trackOuterRadius = 2130772331;
 			
 			// aapt resource value: 0x7f0100e5
 			public const int trackTint = 2130772197;
@@ -2196,26 +2341,26 @@ namespace Barbershop.Droid
 			// aapt resource value: 0x7f020053
 			public const int avd_hide_password = 2130837587;
 			
-			// aapt resource value: 0x7f020117
-			public const int avd_hide_password_1 = 2130837783;
+			// aapt resource value: 0x7f02011a
+			public const int avd_hide_password_1 = 2130837786;
 			
-			// aapt resource value: 0x7f020118
-			public const int avd_hide_password_2 = 2130837784;
+			// aapt resource value: 0x7f02011b
+			public const int avd_hide_password_2 = 2130837787;
 			
-			// aapt resource value: 0x7f020119
-			public const int avd_hide_password_3 = 2130837785;
+			// aapt resource value: 0x7f02011c
+			public const int avd_hide_password_3 = 2130837788;
 			
 			// aapt resource value: 0x7f020054
 			public const int avd_show_password = 2130837588;
 			
-			// aapt resource value: 0x7f02011a
-			public const int avd_show_password_1 = 2130837786;
+			// aapt resource value: 0x7f02011d
+			public const int avd_show_password_1 = 2130837789;
 			
-			// aapt resource value: 0x7f02011b
-			public const int avd_show_password_2 = 2130837787;
+			// aapt resource value: 0x7f02011e
+			public const int avd_show_password_2 = 2130837790;
 			
-			// aapt resource value: 0x7f02011c
-			public const int avd_show_password_3 = 2130837788;
+			// aapt resource value: 0x7f02011f
+			public const int avd_show_password_3 = 2130837791;
 			
 			// aapt resource value: 0x7f020055
 			public const int design_bottom_navigation_item_background = 2130837589;
@@ -2781,11 +2926,11 @@ namespace Barbershop.Droid
 			// aapt resource value: 0x7f020110
 			public const int notification_icon_background = 2130837776;
 			
-			// aapt resource value: 0x7f020115
-			public const int notification_template_icon_bg = 2130837781;
+			// aapt resource value: 0x7f020118
+			public const int notification_template_icon_bg = 2130837784;
 			
-			// aapt resource value: 0x7f020116
-			public const int notification_template_icon_low_bg = 2130837782;
+			// aapt resource value: 0x7f020119
+			public const int notification_template_icon_low_bg = 2130837785;
 			
 			// aapt resource value: 0x7f020111
 			public const int notification_tile_bg = 2130837777;
@@ -2797,7 +2942,16 @@ namespace Barbershop.Droid
 			public const int setting = 2130837779;
 			
 			// aapt resource value: 0x7f020114
-			public const int Splash = 2130837780;
+			public const int sfprogressbar_determinate_linear = 2130837780;
+			
+			// aapt resource value: 0x7f020115
+			public const int sfprogressbar_indeterminate_circular = 2130837781;
+			
+			// aapt resource value: 0x7f020116
+			public const int sfprogressbar_indeterminate_linear = 2130837782;
+			
+			// aapt resource value: 0x7f020117
+			public const int Splash = 2130837783;
 			
 			static Drawable()
 			{
@@ -3228,6 +3382,15 @@ namespace Barbershop.Droid
 			
 			// aapt resource value: 0x7f080072
 			public const int select_dialog_listview = 2131230834;
+			
+			// aapt resource value: 0x7f0800b8
+			public const int sfprogressbar_progress = 2131230904;
+			
+			// aapt resource value: 0x7f0800b7
+			public const int sfprogressbar_secondary_progress = 2131230903;
+			
+			// aapt resource value: 0x7f0800b6
+			public const int sfprogressbar_track = 2131230902;
 			
 			// aapt resource value: 0x7f08005c
 			public const int shortcut = 2131230812;
@@ -6581,6 +6744,112 @@ namespace Barbershop.Droid
 			
 			// aapt resource value: 12
 			public const int SearchView_voiceIcon = 12;
+			
+			public static int[] SfProgressBar = new int[] {
+					2130772309,
+					2130772310,
+					2130772311,
+					2130772312,
+					2130772313,
+					2130772314,
+					2130772315,
+					2130772316,
+					2130772317,
+					2130772318,
+					2130772319,
+					2130772320,
+					2130772321,
+					2130772322,
+					2130772323,
+					2130772324,
+					2130772325,
+					2130772326,
+					2130772327,
+					2130772328,
+					2130772329,
+					2130772330,
+					2130772331,
+					2130772332,
+					2130772333,
+					2130772334};
+			
+			// aapt resource value: 8
+			public const int SfProgressBar_animationDuration = 8;
+			
+			// aapt resource value: 18
+			public const int SfProgressBar_cornerRadius = 18;
+			
+			// aapt resource value: 20
+			public const int SfProgressBar_endAngle = 20;
+			
+			// aapt resource value: 14
+			public const int SfProgressBar_gapWidth = 14;
+			
+			// aapt resource value: 7
+			public const int SfProgressBar_indeterminateAnimationDuration = 7;
+			
+			// aapt resource value: 25
+			public const int SfProgressBar_indicatorInnerRadius = 25;
+			
+			// aapt resource value: 24
+			public const int SfProgressBar_indicatorOuterRadius = 24;
+			
+			// aapt resource value: 12
+			public const int SfProgressBar_indicatorPaddingBottom = 12;
+			
+			// aapt resource value: 9
+			public const int SfProgressBar_indicatorPaddingLeft = 9;
+			
+			// aapt resource value: 10
+			public const int SfProgressBar_indicatorPaddingRight = 10;
+			
+			// aapt resource value: 11
+			public const int SfProgressBar_indicatorPaddingTop = 11;
+			
+			// aapt resource value: 6
+			public const int SfProgressBar_isIndeterminate = 6;
+			
+			// aapt resource value: 5
+			public const int SfProgressBar_maximum = 5;
+			
+			// aapt resource value: 4
+			public const int SfProgressBar_minimum = 4;
+			
+			// aapt resource value: 0
+			public const int SfProgressBar_progress = 0;
+			
+			// aapt resource value: 1
+			public const int SfProgressBar_progressColor = 1;
+			
+			// aapt resource value: 17
+			public const int SfProgressBar_secondaryAnimationDuration = 17;
+			
+			// aapt resource value: 15
+			public const int SfProgressBar_secondaryProgress = 15;
+			
+			// aapt resource value: 16
+			public const int SfProgressBar_secondaryProgressColor = 16;
+			
+			// aapt resource value: 13
+			public const int SfProgressBar_segmentCount = 13;
+			
+			// aapt resource value: 21
+			public const int SfProgressBar_showProgressValue = 21;
+			
+			// aapt resource value: 19
+			public const int SfProgressBar_startAngle = 19;
+			
+			// aapt resource value: 2
+			public const int SfProgressBar_trackColor = 2;
+			
+			// aapt resource value: 3
+			public const int SfProgressBar_trackHeight = 3;
+			
+			// aapt resource value: 23
+			public const int SfProgressBar_trackInnerRadius = 23;
+			
+			// aapt resource value: 22
+			public const int SfProgressBar_trackOuterRadius = 22;
 			
 			public static int[] SnackbarLayout = new int[] {
 					16843039,

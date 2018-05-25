@@ -62,6 +62,12 @@
     <PackageReference Include="Syncfusion.Xamarin.SfBusyIndicator.Android">
       <Version>16.1.0.37</Version>
     </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfProgressBar">
+      <Version>16.1.0.37</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfProgressBar.Android">
+      <Version>16.1.0.37</Version>
+    </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfRadialMenu">
       <Version>16.1.0.37</Version>
     </PackageReference>

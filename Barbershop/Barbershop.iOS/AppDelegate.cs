@@ -1,13 +1,10 @@
-﻿
-
-
-
-namespace Barbershop.iOS
+﻿namespace Barbershop.iOS
 {
     using Foundation;
     using ImageCircle.Forms.Plugin.iOS;
     using Syncfusion.SfBusyIndicator.XForms.iOS;
     using Syncfusion.SfRadialMenu.XForms.iOS;
+    using Syncfusion.XForms.iOS.ProgressBar;
     using UIKit;
 
     // The UIApplicationDelegate for the application. This class is responsible for launching the 
@@ -27,6 +24,7 @@ namespace Barbershop.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             SfRadialMenuRenderer.Init();
+            SfCircularProgressBarRenderer.Init();
             new SfBusyIndicatorRenderer();
             ImageCircleRenderer.Init();
             LoadApplication(new App());

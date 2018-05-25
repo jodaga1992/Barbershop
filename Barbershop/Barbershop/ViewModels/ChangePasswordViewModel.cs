@@ -2,6 +2,7 @@
 namespace Barbershop.ViewModels
 {
     using System;
+    using System.Threading;
     using System.Windows.Input;
     using GalaSoft.MvvmLight.Command;
     using Helpers;
@@ -22,6 +23,7 @@ namespace Barbershop.ViewModels
         #region Attributes
         private bool isRunning;
         private bool isEnabled;
+        private string progress;
         private ImageSource imageSource;
         private MediaFile file;
         #endregion
@@ -33,7 +35,11 @@ namespace Barbershop.ViewModels
             set;
         }
 
-
+        public string Progress
+        {
+            get { return this.progress; }
+            set { SetValue(ref this.progress, value); }
+        }
 
         public bool IsEnabled
         {
@@ -73,6 +79,7 @@ namespace Barbershop.ViewModels
             this.apiService = new ApiService();
             this.dataService = new DataService();
             this.IsEnabled = true;
+            this.Progress = "0";
         }
         #endregion
 
@@ -88,6 +95,7 @@ namespace Barbershop.ViewModels
 
         private async void ChangePassword()
         {
+            this.Progress = "100";
             if (string.IsNullOrEmpty(this.CurrentPassword))
             {
                 await Application.Current.MainPage.DisplayAlert(
@@ -105,7 +113,7 @@ namespace Barbershop.ViewModels
                     Languages.Accept);
                 return;
             }
-
+            
             if (this.CurrentPassword !=MainViewModel.GetInstance().User.Password)
             {
                 await Application.Current.MainPage.DisplayAlert(
@@ -132,7 +140,7 @@ namespace Barbershop.ViewModels
                     Languages.Accept);
                 return;
             }
-
+            
             if (string.IsNullOrEmpty(this.Confirm))
             {
                 await Application.Current.MainPage.DisplayAlert(
@@ -150,10 +158,9 @@ namespace Barbershop.ViewModels
                     Languages.Accept);
                 return;
             }
-
+            
             this.IsRunning = true;
             this.IsEnabled = false;
-
             var connection = await this.apiService.CheckConnection();
 
             if (!connection.IsSuccess)
@@ -166,7 +173,7 @@ namespace Barbershop.ViewModels
                     Languages.Accept);
                 return;
             }
-
+            
             var request = new ChangePasswordRequest
             {
                 CurrentPassword = this.CurrentPassword,
@@ -182,7 +189,7 @@ namespace Barbershop.ViewModels
                 MainViewModel.GetInstance().Token.TokenType,
                 MainViewModel.GetInstance().Token.AccessToken,
                 request);
-
+           
             if (!response.IsSuccess)
             {
                 this.IsRunning = false;
@@ -193,10 +200,9 @@ namespace Barbershop.ViewModels
                     Languages.Accept);
                 return;
             }
-
+          
             MainViewModel.GetInstance().User.Password = this.NewPassword;
             this.dataService.Update(MainViewModel.GetInstance().User);
-
             this.IsRunning = false;
             this.IsEnabled = true;
 
