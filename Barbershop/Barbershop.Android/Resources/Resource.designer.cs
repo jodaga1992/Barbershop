@@ -29,6 +29,7 @@ namespace Barbershop.Droid
 			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::Barbershop.Droid.Resource.String.ApplicationName;
 			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::Barbershop.Droid.Resource.String.Hello;
 			global::Com.Syncfusion.Sfbusyindicator.Resource.String.library_name = global::Barbershop.Droid.Resource.String.library_name;
+			global::Syncfusion.SfRadialMenu.Android.Resource.String.library_name = global::Barbershop.Droid.Resource.String.library_name;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Barbershop.Droid.Resource.Attribute.actionBarSize;
 		}
 		
