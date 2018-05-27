@@ -118,72 +118,72 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Accept" xml:space="preserve">
-    <value>Accept</value>
+    <value>принимать</value>
   </data>
   <data name="BarbershopTitle" xml:space="preserve">
-    <value>Barbershop</value>
+    <value>Парикмахерская</value>
   </data>
   <data name="ChangeImageLabel" xml:space="preserve">
-    <value>Change Image</value>
+    <value>Изменить изображение</value>
   </data>
   <data name="ChangePasswordBtn" xml:space="preserve">
-    <value>Change Passwod</value>
+    <value>Изменить пароль</value>
   </data>
   <data name="ConfirmMessage" xml:space="preserve">
-    <value>Confirm</value>
+    <value>подтвердить</value>
   </data>
   <data name="EmailLabel" xml:space="preserve">
-    <value>Email</value>
+    <value>Эл. адрес</value>
   </data>
   <data name="EmailPlaceHolder" xml:space="preserve">
-    <value>Email</value>
+    <value>Эл. адрес</value>
   </data>
   <data name="EmailValidation" xml:space="preserve">
-    <value>Validar email</value>
+    <value>Электронная почта</value>
   </data>
   <data name="Error" xml:space="preserve">
-    <value>Error</value>
+    <value>ошибка</value>
   </data>
   <data name="FirstNameLabel" xml:space="preserve">
-    <value>First Name</value>
+    <value>ошибка</value>
   </data>
   <data name="FirstNamePlaceholder" xml:space="preserve">
-    <value>First Name....</value>
+    <value>Имя....</value>
   </data>
   <data name="LastNameLabel" xml:space="preserve">
-    <value>Last Name</value>
+    <value>Фамилия</value>
   </data>
   <data name="LastNamePlaceholder" xml:space="preserve">
-    <value>Last Name...</value>
+    <value>Фамилия...</value>
   </data>
   <data name="LeaveMessage" xml:space="preserve">
-    <value>Are you sure you want to leave?</value>
+    <value>Вы уверены, что хотите выйти?</value>
   </data>
   <data name="LogOutLabel" xml:space="preserve">
-    <value>Log Out</value>
+    <value>Выйти</value>
   </data>
   <data name="MyProfileTitle" xml:space="preserve">
-    <value>My Profile</value>
+    <value>Мой профайл</value>
   </data>
   <data name="NoMessage" xml:space="preserve">
-    <value>No</value>
+    <value>нет</value>
   </data>
   <data name="PerfilLabel" xml:space="preserve">
-    <value>Perfil</value>
+    <value>ПРОФИЛЬ</value>
   </data>
   <data name="PhoneLabel" xml:space="preserve">
-    <value>Phone</value>
+    <value>Телефон</value>
   </data>
   <data name="SaveBtn" xml:space="preserve">
-    <value>Save</value>
+    <value>Сохранить</value>
   </data>
   <data name="SchedulesTitle" xml:space="preserve">
-    <value>Schedules</value>
+    <value>Расписание</value>
   </data>
   <data name="StatisticsLabel" xml:space="preserve">
-    <value>Statistics</value>
+    <value>Статистика</value>
   </data>
   <data name="YesMessage" xml:space="preserve">
-    <value>Yes</value>
+    <value>да</value>
   </data>
 </root>

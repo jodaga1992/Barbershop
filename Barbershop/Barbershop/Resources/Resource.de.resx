@@ -118,19 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Accept" xml:space="preserve">
-    <value>Accept</value>
+    <value>Akzeptieren</value>
   </data>
   <data name="BarbershopTitle" xml:space="preserve">
-    <value>Barbershop</value>
+    <value>Friseur</value>
   </data>
   <data name="ChangeImageLabel" xml:space="preserve">
-    <value>Change Image</value>
+    <value>Bild ändern</value>
   </data>
   <data name="ChangePasswordBtn" xml:space="preserve">
-    <value>Change Passwod</value>
+    <value>Passwort ändern</value>
   </data>
   <data name="ConfirmMessage" xml:space="preserve">
-    <value>Confirm</value>
+    <value>Bestätigen</value>
   </data>
   <data name="EmailLabel" xml:space="preserve">
     <value>Email</value>
@@ -139,51 +139,51 @@
     <value>Email</value>
   </data>
   <data name="EmailValidation" xml:space="preserve">
-    <value>Validar email</value>
+    <value>Validarische E-Mail</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Error</value>
   </data>
   <data name="FirstNameLabel" xml:space="preserve">
-    <value>First Name</value>
+    <value>Vorname</value>
   </data>
   <data name="FirstNamePlaceholder" xml:space="preserve">
-    <value>First Name....</value>
+    <value>Vorname....</value>
   </data>
   <data name="LastNameLabel" xml:space="preserve">
-    <value>Last Name</value>
+    <value>Familienname, Nachname</value>
   </data>
   <data name="LastNamePlaceholder" xml:space="preserve">
-    <value>Last Name...</value>
+    <value>Familienname, Nachname...</value>
   </data>
   <data name="LeaveMessage" xml:space="preserve">
-    <value>Are you sure you want to leave?</value>
+    <value>Bist du sicher dass du gehen willst?</value>
   </data>
   <data name="LogOutLabel" xml:space="preserve">
-    <value>Log Out</value>
+    <value>Ausloggen</value>
   </data>
   <data name="MyProfileTitle" xml:space="preserve">
-    <value>My Profile</value>
+    <value>Mein Profil</value>
   </data>
   <data name="NoMessage" xml:space="preserve">
-    <value>No</value>
+    <value>Nein</value>
   </data>
   <data name="PerfilLabel" xml:space="preserve">
     <value>Perfil</value>
   </data>
   <data name="PhoneLabel" xml:space="preserve">
-    <value>Phone</value>
+    <value>Telefon</value>
   </data>
   <data name="SaveBtn" xml:space="preserve">
-    <value>Save</value>
+    <value>sparen</value>
   </data>
   <data name="SchedulesTitle" xml:space="preserve">
-    <value>Schedules</value>
+    <value>Termine</value>
   </data>
   <data name="StatisticsLabel" xml:space="preserve">
-    <value>Statistics</value>
+    <value>Statistiken</value>
   </data>
   <data name="YesMessage" xml:space="preserve">
-    <value>Yes</value>
+    <value>Ja</value>
   </data>
 </root>
