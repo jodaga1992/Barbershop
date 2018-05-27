@@ -25,7 +25,6 @@
         #endregion
 
         #region Properties
-
         public bool IsRefreshing
         {
             get { return this.isRefreshing; }

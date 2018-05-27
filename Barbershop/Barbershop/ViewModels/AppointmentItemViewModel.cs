@@ -26,6 +26,14 @@
                 return new RelayCommand(AddAppointment);
             }
         }
+
+        public ICommand CancelAppointmentCommand
+        {
+            get
+            {
+                return new RelayCommand(CancelAppointment);
+            }
+        }
         #endregion
 
         #region Methods
@@ -46,6 +54,7 @@
                     return;
                 }
                 var mainViewModel = MainViewModel.GetInstance();
+                mainViewModel.Schedule.IsRefreshing = true;
                 var appointment = new Appointment
                 {
                     UserId = mainViewModel.User.UserId,
@@ -70,15 +79,69 @@
                         Languages.Accept);
                     return;
                 }
-
+                mainViewModel.Schedule.IsRefreshing = false;
                 await Application.Current.MainPage.DisplayAlert(
                 "Confirm",
                 "La cita fue apartada",
                 Languages.Accept);
                 await App.Navigator.PopAsync();
-                //await Application.Current.MainPage.Navigation.PopAsync();
             }
         }
+
+        private async void CancelAppointment()
+        {
+            var answer = await Application.Current.MainPage.DisplayAlert(
+                "Confirmacion", "¿Seguro que desea cancelar esta cita", "Si", "No");
+            if (answer)
+            {
+                this.apiService = new ApiService();
+                var checkConnetion = await this.apiService.CheckConnection();
+                if (!checkConnetion.IsSuccess)
+                {
+                    await Application.Current.MainPage.DisplayAlert(
+                        Languages.Error,
+                        checkConnetion.Message,
+                        Languages.Accept);
+                    return;
+                }
+                var mainViewModel = MainViewModel.GetInstance();
+                mainViewModel.Appointments.IsRefreshing = true;
+                var appointment = new AppointmentResponse
+                {
+                    UserId = mainViewModel.User.UserId,
+                    BarberId = this.BarberId,
+                    Date = this.Date.Date,
+                    Hour = this.Hour,
+                    StatusAppointmentId = 3,
+                    AppointmentId = this.AppointmentId
+                };
+
+                var apiSecurity = Application.Current.Resources["APISecurity"].ToString();
+                var response = await this.apiService.Put(
+                    apiSecurity,
+                    "/api",
+                    "/Appointments",
+                    mainViewModel.Token.TokenType,
+                    mainViewModel.Token.AccessToken,
+                    appointment);
+
+                if (!response.IsSuccess)
+                {
+                    await Application.Current.MainPage.DisplayAlert(
+                        Languages.Error,
+                        response.Message,
+                        Languages.Accept);
+                    return;
+                }
+                mainViewModel.Appointments.IsRefreshing = false;
+                await Application.Current.MainPage.DisplayAlert(
+                "Confirm",
+                "La cita fue Cancelada",
+                Languages.Accept);
+                await App.Navigator.PopAsync();
+            }
+        }
+
         #endregion
     }
 }

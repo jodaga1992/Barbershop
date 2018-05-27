@@ -22,5 +22,10 @@
 
         [JsonProperty("Hour")]
         public DateTime Hour { get; set; }
+
+        public override int GetHashCode()
+        {
+            return AppointmentId;
+        }
     }
 }

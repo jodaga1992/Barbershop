@@ -86,6 +86,12 @@ namespace Barbershop.ViewModels
             set;
         }
 
+        public AppointmentsViewModel Appointments
+        {
+            get;
+            set;
+        }
+
         #endregion
 
         #region Constructors
@@ -126,9 +132,9 @@ namespace Barbershop.ViewModels
 
             this.Menus.Add(new MenuItemViewModel
             {
-                Icon = "grafig",
-                PageName = "StatisticsPage",
-                Title = "Statistics"
+                Icon = "ic_date_range",
+                PageName = "AppointmentsPage",
+                Title = "My Appointments"
             });
 
             this.Menus.Add(new MenuItemViewModel

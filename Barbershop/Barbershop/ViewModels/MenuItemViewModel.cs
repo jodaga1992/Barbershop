@@ -51,7 +51,13 @@ namespace Barbershop.ViewModels
                 MainViewModel.GetInstance().MyProfile = new MyProfileViewModel();
                 App.Navigator.PushAsync(new MyProfilePage());
             }
+            else if (this.PageName == "AppointmentsPage")
+            {
+                MainViewModel.GetInstance().Appointments = new AppointmentsViewModel();
+                App.Navigator.PushAsync(new AppointmentsPage());
+            }
         }
+        
         #endregion
     }
 

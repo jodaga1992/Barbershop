@@ -2,6 +2,7 @@
 {
     using Barbershop.Domain2;
     using Models;
+    using System;
     using System.Collections.Generic;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
@@ -24,7 +25,7 @@
 
             foreach (var appointment in appointments)
             {
-                if (appointment.UserId==id)
+                if (appointment.UserId == id && appointment.Date >= DateTime.Today && appointment.StatusAppointmentId==1)
                 {
                     responses.Add(new AppointmentResponse
                     {
@@ -68,16 +69,16 @@
         [ResponseType(typeof(void))]
         public async Task<IHttpActionResult> PutAppointment(int id, Appointment appointment)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+            //if (!ModelState.IsValid)
+            //{
+            //    return BadRequest(ModelState);
+            //}
 
             if (id != appointment.AppointmentId)
             {
                 return BadRequest();
             }
-
+            appointment.Hour = appointment.Hour.ToUniversalTime();
             db.Entry(appointment).State = EntityState.Modified;
 
             try
@@ -86,7 +87,7 @@
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!AppointmentExists(id))
+                if (!AppointmentExists(appointment.AppointmentId))
                 {
                     return NotFound();
                 }

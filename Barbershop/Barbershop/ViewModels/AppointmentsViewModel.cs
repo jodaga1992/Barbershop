@@ -1,11 +1,16 @@
 ﻿namespace Barbershop.ViewModels
 {
+    using Barbershop.Helpers;
     using Barbershop.Models;
+    using GalaSoft.MvvmLight.Command;
     using Services;
     using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
+    using System.Linq;
     using System.Text;
+    using System.Windows.Input;
+    using Xamarin.Forms;
 
     public class AppointmentsViewModel : BaseViewModel
     {
@@ -16,24 +21,98 @@
         #region Attributes
         private bool isRefreshing;
         private List<AppointmentResponse> list;
-        private ObservableCollection<ScheduleItemViewModel> schedules;
+        private ObservableCollection<AppointmentItemViewModel> appointments;
         #endregion
 
         #region Properties
-
         public bool IsRefreshing
         {
             get { return this.isRefreshing; }
             set { SetValue(ref this.isRefreshing, value); }
         }
 
-        public ObservableCollection<ScheduleItemViewModel> Schedules
+        public ObservableCollection<AppointmentItemViewModel> Appointments
         {
-            get { return this.schedules; }
-            set { SetValue(ref this.schedules, value); }
+            get { return this.appointments; }
+            set { SetValue(ref this.appointments, value); }
         }
-        public BarberResponse Barber { get; set; }
         #endregion
 
+        #region Constructors
+        public AppointmentsViewModel()
+        {
+            this.apiService = new ApiService();
+            this.LoadAppointments();
+        }
+        #endregion
+
+        #region Commands
+        public ICommand RefreshCommand
+        {
+            get
+            {
+                return new RelayCommand(LoadAppointments);
+            }
+        }
+        #endregion
+        #region Methods
+
+        private async void LoadAppointments()
+        {
+            this.IsRefreshing = true;
+
+            var connection = await this.apiService.CheckConnection();
+
+            if (!connection.IsSuccess)
+            {
+                this.IsRefreshing = false;
+                await Application.Current.MainPage.DisplayAlert(
+                Languages.Error,
+                connection.Message,
+                Languages.Accept);
+                await Application.Current.MainPage.Navigation.PopAsync();
+                return;
+            }
+
+            var mainViewModel = MainViewModel.GetInstance();
+
+            var response = await this.apiService.GetList<AppointmentResponse>(
+               "http://barbershopgokuapi.azurewebsites.net",
+                "/api",
+                string.Format("/GetAppointmentUser?id={0}", mainViewModel.User.UserId));
+
+            if (!response.IsSuccess)
+            {
+                this.IsRefreshing = false;
+                this.IsRefreshing = false;
+                await Application.Current.MainPage.DisplayAlert(
+                    Languages.Error,
+                    response.Message,
+                    Languages.Accept);
+                await Application.Current.MainPage.Navigation.PopAsync();
+                return;
+            }
+
+            this.list = (List<AppointmentResponse>)response.Result;
+            this.Appointments = new ObservableCollection<AppointmentItemViewModel>(
+                this.ToAppointmentItemViewModel());
+            this.IsRefreshing = false;
+        }
+
+        private IEnumerable<AppointmentItemViewModel> ToAppointmentItemViewModel()
+        {
+            var mainViewModel = MainViewModel.GetInstance();
+            return list.Select(l => new AppointmentItemViewModel
+            {
+                BarberId = l.BarberId,
+                Date = l.Date,
+                Hour = l.Hour,
+                UserId = mainViewModel.User.UserId,
+                StatusAppointmentId = l.StatusAppointmentId,
+                AppointmentId = l.AppointmentId
+            });
+        }
+
+        #endregion
     }
 }
