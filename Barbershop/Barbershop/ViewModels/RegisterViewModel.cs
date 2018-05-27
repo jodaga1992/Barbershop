@@ -189,7 +189,6 @@ namespace Barbershop.ViewModels
             this.IsEnabled = false;
 
             var checkConnetion = await this.apiService.CheckConnection();
-            int entero = 1;
             if (!checkConnetion.IsSuccess)
             {
                 this.IsRunning = false;

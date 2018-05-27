@@ -54,7 +54,7 @@
         }
 
         [HttpGet]
-        [Route("GetBarberAvailability")]
+        [Route("api/GetBarberAvailability")]
         public async Task<IHttpActionResult> GetBarberAvailability(int id, DateTime date)
         {
             var responses = new List<AppointmentResponse>();
@@ -115,20 +115,8 @@
                 bool add = false;
                 foreach (var appointment in responses)
                 {
-                    if (appointment.Hour == start)
+                    if (appointment.Hour == start && appointment.StatusAppointmentId != 3)
                     {
-                        response.Add(new AppointmentResponse
-                        {
-                            BarberId = appointment.BarberId,
-                            AppointmentId = appointment.AppointmentId,
-                            UserId = appointment.UserId,
-                            StatusAppointmentId = appointment.StatusAppointmentId,
-                            Date = appointment.Date,
-                            Hour = appointment.Hour,
-                            User = appointment.User,
-                            Barber = appointment.Barber,
-                            StatusAppointment = appointment.StatusAppointment
-                        });
                         add = true;
                         break;
                     }
@@ -139,7 +127,7 @@
                     {
                         BarberId = id,
                         Date = date,
-                        Hour = start,
+                        Hour = start.ToLocalTime(),
                     });
                 }
                 start = start.AddMinutes(30);

@@ -2,16 +2,15 @@
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
-    x:Class="Barbershop.Views.BarberPage"
+    x:Class="Barbershop.Views.SchedulePage"
     BindingContext="{Binding Main, Source={StaticResource Locator}}"
-    Title="Schedules">
+    Title="Appointments">
     <ContentPage.Content>
         <StackLayout
-            BindingContext="{Binding Barber}"
+            BindingContext="{Binding Schedule}"
             Padding="4">
             <ListView
-                ItemsSource="{Binding Schedules}"
+                ItemsSource="{Binding Appointments}"
                 HasUnevenRows="True"
                 IsPullToRefreshEnabled="True"
                 IsRefreshing="{Binding IsRefreshing, Mode=TwoWay}"
@@ -26,7 +25,7 @@
                                 HasShadow="true"
                                 Margin="5">
                                 <Frame.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding SelectScheduleCommand}"/>
+                                    <TapGestureRecognizer Command="{Binding AddAppointmentCommand}"/>
                                 </Frame.GestureRecognizers>
                                 <Grid>
                                     <Grid.ColumnDefinitions>
@@ -39,7 +38,7 @@
                                         <Label
                                             FontAttributes="Bold"
                                             FontSize="Medium"
-                                            Text="{Binding Date, StringFormat='{0:dd/MMMM/yyyy}'}"
+                                            Text="{Binding Hour, StringFormat='{0: h:mm tt}'}"
                                             TextColor="Black">
                                         </Label>
                                     </StackLayout>

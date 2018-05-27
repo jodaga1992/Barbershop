@@ -42,7 +42,7 @@ namespace Barbershop.ViewModels
                     mainViewModel.Token = null;
                     mainViewModel.User = null;
                     mainViewModel.TokenType = string.Empty;
-                    Application.Current.MainPage = new LoginPage();
+                    Application.Current.MainPage = new NavigationPage(new LoginPage());
                 }
                 
             }

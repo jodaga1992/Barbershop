@@ -103,10 +103,19 @@
         [ResponseType(typeof(Appointment))]
         public async Task<IHttpActionResult> PostAppointment(Appointment appointment)
         {
-            if (!ModelState.IsValid)
+            //if (!ModelState.IsValid)
+            //{
+            //    return BadRequest(ModelState);
+            //}
+            var hour = appointment.Hour.ToUniversalTime();
+            var appointments = await db.Appointments.
+                Where(u => u.BarberId == appointment.BarberId && u.Date == appointment.Date && u.Hour == hour && u.StatusAppointmentId !=3).           //Email.ToLower() == email.ToLower()).
+                FirstOrDefaultAsync();
+            if (appointments != null)
             {
-                return BadRequest(ModelState);
+                return BadRequest();
             }
+
             appointment.Hour = appointment.Hour.ToUniversalTime();
             db.Appointments.Add(appointment);
             await db.SaveChangesAsync();

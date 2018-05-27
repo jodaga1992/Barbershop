@@ -80,6 +80,12 @@ namespace Barbershop.ViewModels
             set;
         }
 
+        public ScheduleViewModel Schedule
+        {
+            get;
+            set;
+        }
+
         #endregion
 
         #region Constructors
