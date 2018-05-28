@@ -150,6 +150,9 @@
   <data name="FirstNamePlaceholder" xml:space="preserve">
     <value>Nombre</value>
   </data>
+  <data name="ForgotPasswordLabel" xml:space="preserve">
+    <value>olvidaste tu password ?</value>
+  </data>
   <data name="LastNameLabel" xml:space="preserve">
     <value>Apellido</value>
   </data>
@@ -158,6 +161,12 @@
   </data>
   <data name="LeaveMessage" xml:space="preserve">
     <value>¿ Esta seguro de salir ?</value>
+  </data>
+  <data name="LoadingLabel" xml:space="preserve">
+    <value>Cargando...</value>
+  </data>
+  <data name="LoginBtn" xml:space="preserve">
+    <value>Entrar</value>
   </data>
   <data name="LogOutLabel" xml:space="preserve">
     <value>Salir</value>
@@ -168,11 +177,20 @@
   <data name="NoMessage" xml:space="preserve">
     <value>No</value>
   </data>
+  <data name="PasswordEnterPlaceholder" xml:space="preserve">
+    <value>Ingresa tu password</value>
+  </data>
+  <data name="PasswordLabel" xml:space="preserve">
+    <value>Password</value>
+  </data>
   <data name="PerfilLabel" xml:space="preserve">
     <value>Perfil</value>
   </data>
   <data name="PhoneLabel" xml:space="preserve">
     <value>Num Telefono</value>
+  </data>
+  <data name="RegisterBtn" xml:space="preserve">
+    <value>Registrar</value>
   </data>
   <data name="SaveBtn" xml:space="preserve">
     <value>Guardar</value>
@@ -185,5 +203,104 @@
   </data>
   <data name="YesMessage" xml:space="preserve">
     <value>Si</value>
+  </data>
+  <data name="ChangePasswordTitle" xml:space="preserve">
+    <value>Cambiar Password</value>
+  </data>
+  <data name="ConfirmPasswordLabel" xml:space="preserve">
+    <value>Confirmar</value>
+  </data>
+  <data name="ConfirmPasswordPlaceholder" xml:space="preserve">
+    <value>Confirmar</value>
+  </data>
+  <data name="CurrentePasswordPlaceholder" xml:space="preserve">
+    <value>Password Actual</value>
+  </data>
+  <data name="CurrentPasswordLabel" xml:space="preserve">
+    <value>Cambiar Password</value>
+  </data>
+  <data name="NewPasswordLabel" xml:space="preserve">
+    <value>Nuevo Password</value>
+  </data>
+  <data name="NewPasswordPlaceholder" xml:space="preserve">
+    <value>Nuevo Password</value>
+  </data>
+  <data name="LastNameLabel1" xml:space="preserve">
+    <value>Apellido</value>
+  </data>
+  <data name="LastNamePlaceholder1" xml:space="preserve">
+    <value>Apellido..</value>
+  </data>
+  <data name="LoginTitle" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="MenuTitle" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="NameLabel" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="NamePlaceholder" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="PhonePlaceholder" xml:space="preserve">
+    <value>Telefono..</value>
+  </data>
+  <data name="RegisterTitle" xml:space="preserve">
+    <value>Registrar</value>
+  </data>
+  <data name="TouchChangeImage" xml:space="preserve">
+    <value>Toque para cambiar imagen</value>
+  </data>
+  <data name="ChangeConfirPassword" xml:space="preserve">
+    <value>Cambio de password confirmado</value>
+  </data>
+  <data name="ErrorChargingPassword" xml:space="preserve">
+    <value>Error cambiando password</value>
+  </data>
+  <data name="ThePasswordHaveSix" xml:space="preserve">
+    <value>El password debe tener al menos 6 caracteres</value>
+  </data>
+  <data name="ThePasswordNotMatch" xml:space="preserve">
+    <value>El password y la confirmacion no coinciden</value>
+  </data>
+  <data name="YouMustConfirm" xml:space="preserve">
+    <value>Debes confirmar un password</value>
+  </data>
+  <data name="YouMustPassword" xml:space="preserve">
+    <value>Debes ingresar un password</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="FromCamera" xml:space="preserve">
+    <value>De camara</value>
+  </data>
+  <data name="FromGallery" xml:space="preserve">
+    <value>De la galería</value>
+  </data>
+  <data name="SomethingWasWrong" xml:space="preserve">
+    <value>Algo estuvo mal, por favor intente más tarde</value>
+  </data>
+  <data name="TheUserWasCreate" xml:space="preserve">
+    <value>El usuario fue crear, ahora puede iniciar sesión con este correo electrónico y contraseña</value>
+  </data>
+  <data name="WhereDoYouWantImage" xml:space="preserve">
+    <value>¿Dónde quieres tomar la imagen?</value>
+  </data>
+  <data name="YouMostConfirPassword" xml:space="preserve">
+    <value>Debes ingresar un confirmar</value>
+  </data>
+  <data name="YouMostEnterEmail" xml:space="preserve">
+    <value>Debe ingresar un correo electrónico</value>
+  </data>
+  <data name="YouMostEnterEmailValid" xml:space="preserve">
+    <value>Debes ingresar un correo electrónico válido</value>
+  </data>
+  <data name="YouMostEnterPhone" xml:space="preserve">
+    <value>Debes ingresar un teléfono</value>
+  </data>
+  <data name="YouMostFirstName" xml:space="preserve">
+    <value>Debes ingresar un nombre</value>
   </data>
 </root>

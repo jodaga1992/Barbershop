@@ -4,9 +4,10 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
     xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms"
+    xmlns:i18n="clr-namespace:Barbershop.Helpers"
     x:Class="Barbershop.Views.LoginPage"
     BindingContext="{Binding Main, Source={StaticResource Locator}}"
-    Title="Login">
+    Title="{i18n:Translate LoginTitle}">
     <ContentPage.Content>
         <ScrollView
             BackgroundColor="#bcbcbc"
@@ -30,7 +31,7 @@
                         <Label 
                             Grid.Row="0"
                             Grid.Column="0"
-                            Text="E-mail"
+                            Text="{i18n:Translate EmailLabel}"
                             VerticalOptions="Center">
                         </Label>
                         <Entry
@@ -38,12 +39,12 @@
                             Grid.Column="1"
                             Keyboard="Email"
                             Text="{Binding Email, Mode=TwoWay}"
-                            Placeholder="Enter your Email...">
+                            Placeholder="{i18n:Translate EmailPlaceHolder}">
                         </Entry>
                         <Label      
                             Grid.Row="1"
                             Grid.Column="0"
-                            Text="Password"
+                            Text="{i18n:Translate PasswordLabel}"
                             VerticalOptions="Center">
                         </Label>
                         <Entry
@@ -51,7 +52,7 @@
                             Grid.Column="1"
                             IsPassword="true"
                             Text="{Binding Password, Mode=TwoWay}"
-                            Placeholder="Enter your password ?">
+                            Placeholder="{i18n:Translate PasswordEnterPlaceholder}">
                         </Entry>
                     </Grid>
                     <StackLayout
@@ -71,7 +72,7 @@
                     <Label
                         HorizontalOptions="Center"
                         TextColor="Blue"
-                        Text="Forgot your password"
+                        Text="{i18n:Translate ForgotPasswordLabel}"
                         VerticalOptions="CenterAndExpand">
                     </Label>
                     <StackLayout 
@@ -87,7 +88,7 @@
                                 HorizontalOptions="FillAndExpand"  
                                 IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
                                 TextColor="White"
-                                Text="Login">
+                                Text="{i18n:Translate LoginBtn}">
                             </Button>
                             <Button
                                 BackgroundColor="#642EFE"
@@ -97,7 +98,7 @@
                                 HorizontalOptions="FillAndExpand"  
                                 IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
                                 TextColor="White"
-                                Text="Register">
+                                Text="{i18n:Translate RegisterBtn}">
                             </Button>
                     </StackLayout>
                     <!--<StackLayout
@@ -133,7 +134,7 @@
                     HorizontalOptions="Center"
                     TextColor="Black"
                     IsVisible="{Binding IsRunning, Mode=TwoWay}"
-                    Title="Loading ..."
+                    Title="{i18n:Translate LoadingLabel}"
                     VerticalOptions="Center"
                     ViewBoxWidth="100"
                     ViewBoxHeight="100">

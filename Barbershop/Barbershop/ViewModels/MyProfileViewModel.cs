@@ -162,7 +162,7 @@ namespace Barbershop.ViewModels
             {
                 await Application.Current.MainPage.DisplayAlert(
                     Languages.Error,
-                    "Last Name",
+                    Languages.LastNameLabel,
                     Languages.Accept);
                 return;
             }

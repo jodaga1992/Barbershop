@@ -150,6 +150,9 @@
   <data name="FirstNamePlaceholder" xml:space="preserve">
     <value>Имя....</value>
   </data>
+  <data name="ForgotPasswordLabel" xml:space="preserve">
+    <value>Забыли пароль ?</value>
+  </data>
   <data name="LastNameLabel" xml:space="preserve">
     <value>Фамилия</value>
   </data>
@@ -158,6 +161,12 @@
   </data>
   <data name="LeaveMessage" xml:space="preserve">
     <value>Вы уверены, что хотите выйти?</value>
+  </data>
+  <data name="LoadingLabel" xml:space="preserve">
+    <value>загрузка</value>
+  </data>
+  <data name="LoginBtn" xml:space="preserve">
+    <value>Авторизоваться</value>
   </data>
   <data name="LogOutLabel" xml:space="preserve">
     <value>Выйти</value>
@@ -168,11 +177,20 @@
   <data name="NoMessage" xml:space="preserve">
     <value>нет</value>
   </data>
+  <data name="PasswordEnterPlaceholder" xml:space="preserve">
+    <value>Введите ваш пароль</value>
+  </data>
+  <data name="PasswordLabel" xml:space="preserve">
+    <value>пароль</value>
+  </data>
   <data name="PerfilLabel" xml:space="preserve">
     <value>ПРОФИЛЬ</value>
   </data>
   <data name="PhoneLabel" xml:space="preserve">
     <value>Телефон</value>
+  </data>
+  <data name="RegisterBtn" xml:space="preserve">
+    <value>регистр</value>
   </data>
   <data name="SaveBtn" xml:space="preserve">
     <value>Сохранить</value>
@@ -185,5 +203,104 @@
   </data>
   <data name="YesMessage" xml:space="preserve">
     <value>да</value>
+  </data>
+  <data name="ChangePasswordTitle" xml:space="preserve">
+    <value>Изменить пароль</value>
+  </data>
+  <data name="ConfirmPasswordLabel" xml:space="preserve">
+    <value>подтвердить</value>
+  </data>
+  <data name="ConfirmPasswordPlaceholder" xml:space="preserve">
+    <value>подтвердить</value>
+  </data>
+  <data name="CurrentePasswordPlaceholder" xml:space="preserve">
+    <value>текущий пароль</value>
+  </data>
+  <data name="CurrentPasswordLabel" xml:space="preserve">
+    <value>Изменить пароль</value>
+  </data>
+  <data name="NewPasswordLabel" xml:space="preserve">
+    <value>пароль</value>
+  </data>
+  <data name="NewPasswordPlaceholder" xml:space="preserve">
+    <value>новый пароль</value>
+  </data>
+  <data name="LastNameLabel1" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="LastNamePlaceholder1" xml:space="preserve">
+    <value>Фамилия ...</value>
+  </data>
+  <data name="LoginTitle" xml:space="preserve">
+    <value>Авторизоваться</value>
+  </data>
+  <data name="MenuTitle" xml:space="preserve">
+    <value>Меню</value>
+  </data>
+  <data name="NameLabel" xml:space="preserve">
+    <value>имя</value>
+  </data>
+  <data name="NamePlaceholder" xml:space="preserve">
+    <value>Имя ...</value>
+  </data>
+  <data name="PhonePlaceholder" xml:space="preserve">
+    <value>Телефон ....</value>
+  </data>
+  <data name="RegisterTitle" xml:space="preserve">
+    <value>регистр</value>
+  </data>
+  <data name="TouchChangeImage" xml:space="preserve">
+    <value>коснуться, чтобы изменить изображение</value>
+  </data>
+  <data name="ChangeConfirPassword" xml:space="preserve">
+    <value>Изменить подтверждение пароля</value>
+  </data>
+  <data name="ErrorChargingPassword" xml:space="preserve">
+    <value>Ошибка смены пароля</value>
+  </data>
+  <data name="ThePasswordHaveSix" xml:space="preserve">
+    <value>Пароль должен содержать не менее шести (6) символов</value>
+  </data>
+  <data name="ThePasswordNotMatch" xml:space="preserve">
+    <value>Пароль и подтверждение не совпадают</value>
+  </data>
+  <data name="YouMustConfirm" xml:space="preserve">
+    <value>Вы должны ввести подтверждение</value>
+  </data>
+  <data name="YouMustPassword" xml:space="preserve">
+    <value>Вы должны ввести пароль</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="FromCamera" xml:space="preserve">
+    <value>FromCamera</value>
+  </data>
+  <data name="FromGallery" xml:space="preserve">
+    <value>Из галереи</value>
+  </data>
+  <data name="SomethingWasWrong" xml:space="preserve">
+    <value>Что-то не так, пожалуйста, попробуйте позже</value>
+  </data>
+  <data name="TheUserWasCreate" xml:space="preserve">
+    <value>Пользователь был создан, теперь вы можете войти с этим адресом электронной почты и паролем</value>
+  </data>
+  <data name="WhereDoYouWantImage" xml:space="preserve">
+    <value>Где вы хотите взять изображение?</value>
+  </data>
+  <data name="YouMostConfirPassword" xml:space="preserve">
+    <value>Вы должны ввести подтверждение</value>
+  </data>
+  <data name="YouMostEnterEmail" xml:space="preserve">
+    <value>Вы должны ввести электронную почту</value>
+  </data>
+  <data name="YouMostEnterEmailValid" xml:space="preserve">
+    <value>Вы должны ввести действующий адрес электронной почты</value>
+  </data>
+  <data name="YouMostEnterPhone" xml:space="preserve">
+    <value>Вы должны ввести телефон</value>
+  </data>
+  <data name="YouMostFirstName" xml:space="preserve">
+    <value>Вы должны ввести имя</value>
   </data>
 </root>

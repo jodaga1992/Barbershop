@@ -79,6 +79,24 @@ namespace Barbershop.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        public static string Cancel {
+            get {
+                return ResourceManager.GetString("Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Chage Password Confirm.
+        /// </summary>
+        public static string ChangeConfirPassword {
+            get {
+                return ResourceManager.GetString("ChangeConfirPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Change Image.
         /// </summary>
         public static string ChangeImageLabel {
@@ -97,11 +115,56 @@ namespace Barbershop.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Change Password.
+        /// </summary>
+        public static string ChangePasswordTitle {
+            get {
+                return ResourceManager.GetString("ChangePasswordTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Confirm.
         /// </summary>
         public static string ConfirmMessage {
             get {
                 return ResourceManager.GetString("ConfirmMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Confirm.
+        /// </summary>
+        public static string ConfirmPasswordLabel {
+            get {
+                return ResourceManager.GetString("ConfirmPasswordLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Confirm.
+        /// </summary>
+        public static string ConfirmPasswordPlaceholder {
+            get {
+                return ResourceManager.GetString("ConfirmPasswordPlaceholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Current Password.
+        /// </summary>
+        public static string CurrentePasswordPlaceholder {
+            get {
+                return ResourceManager.GetString("CurrentePasswordPlaceholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change Password.
+        /// </summary>
+        public static string CurrentPasswordLabel {
+            get {
+                return ResourceManager.GetString("CurrentPasswordLabel", resourceCulture);
             }
         }
         
@@ -142,6 +205,15 @@ namespace Barbershop.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Error Changing Password.
+        /// </summary>
+        public static string ErrorChargingPassword {
+            get {
+                return ResourceManager.GetString("ErrorChargingPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to First Name.
         /// </summary>
         public static string FirstNameLabel {
@@ -160,11 +232,47 @@ namespace Barbershop.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to forgot your password ?.
+        /// </summary>
+        public static string ForgotPasswordLabel {
+            get {
+                return ResourceManager.GetString("ForgotPasswordLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FromCamera.
+        /// </summary>
+        public static string FromCamera {
+            get {
+                return ResourceManager.GetString("FromCamera", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to From Gallery.
+        /// </summary>
+        public static string FromGallery {
+            get {
+                return ResourceManager.GetString("FromGallery", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Last Name.
         /// </summary>
         public static string LastNameLabel {
             get {
                 return ResourceManager.GetString("LastNameLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last Name.
+        /// </summary>
+        public static string LastNameLabel1 {
+            get {
+                return ResourceManager.GetString("LastNameLabel1", resourceCulture);
             }
         }
         
@@ -178,11 +286,47 @@ namespace Barbershop.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Last Name....
+        /// </summary>
+        public static string LastNamePlaceholder1 {
+            get {
+                return ResourceManager.GetString("LastNamePlaceholder1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Are you sure you want to leave?.
         /// </summary>
         public static string LeaveMessage {
             get {
                 return ResourceManager.GetString("LeaveMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Loading....
+        /// </summary>
+        public static string LoadingLabel {
+            get {
+                return ResourceManager.GetString("LoadingLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Login.
+        /// </summary>
+        public static string LoginBtn {
+            get {
+                return ResourceManager.GetString("LoginBtn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Login.
+        /// </summary>
+        public static string LoginTitle {
+            get {
+                return ResourceManager.GetString("LoginTitle", resourceCulture);
             }
         }
         
@@ -196,6 +340,15 @@ namespace Barbershop.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Menu.
+        /// </summary>
+        public static string MenuTitle {
+            get {
+                return ResourceManager.GetString("MenuTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to My Profile.
         /// </summary>
         public static string MyProfileTitle {
@@ -205,11 +358,65 @@ namespace Barbershop.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        public static string NameLabel {
+            get {
+                return ResourceManager.GetString("NameLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name....
+        /// </summary>
+        public static string NamePlaceholder {
+            get {
+                return ResourceManager.GetString("NamePlaceholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New Password.
+        /// </summary>
+        public static string NewPasswordLabel {
+            get {
+                return ResourceManager.GetString("NewPasswordLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New Password.
+        /// </summary>
+        public static string NewPasswordPlaceholder {
+            get {
+                return ResourceManager.GetString("NewPasswordPlaceholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to No.
         /// </summary>
         public static string NoMessage {
             get {
                 return ResourceManager.GetString("NoMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter your password.
+        /// </summary>
+        public static string PasswordEnterPlaceholder {
+            get {
+                return ResourceManager.GetString("PasswordEnterPlaceholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        public static string PasswordLabel {
+            get {
+                return ResourceManager.GetString("PasswordLabel", resourceCulture);
             }
         }
         
@@ -232,6 +439,33 @@ namespace Barbershop.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Phone.....
+        /// </summary>
+        public static string PhonePlaceholder {
+            get {
+                return ResourceManager.GetString("PhonePlaceholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Register.
+        /// </summary>
+        public static string RegisterBtn {
+            get {
+                return ResourceManager.GetString("RegisterBtn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Register.
+        /// </summary>
+        public static string RegisterTitle {
+            get {
+                return ResourceManager.GetString("RegisterTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Save.
         /// </summary>
         public static string SaveBtn {
@@ -250,6 +484,15 @@ namespace Barbershop.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Something was wrong, please try later.
+        /// </summary>
+        public static string SomethingWasWrong {
+            get {
+                return ResourceManager.GetString("SomethingWasWrong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Statistics.
         /// </summary>
         public static string StatisticsLabel {
@@ -259,11 +502,119 @@ namespace Barbershop.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The password must have at least seix (6) characters.
+        /// </summary>
+        public static string ThePasswordHaveSix {
+            get {
+                return ResourceManager.GetString("ThePasswordHaveSix", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The password and confirm does not match.
+        /// </summary>
+        public static string ThePasswordNotMatch {
+            get {
+                return ResourceManager.GetString("ThePasswordNotMatch", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The user was create, now you can login with this email and password.
+        /// </summary>
+        public static string TheUserWasCreate {
+            get {
+                return ResourceManager.GetString("TheUserWasCreate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to touch to change image.
+        /// </summary>
+        public static string TouchChangeImage {
+            get {
+                return ResourceManager.GetString("TouchChangeImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Where do you want to take the image?.
+        /// </summary>
+        public static string WhereDoYouWantImage {
+            get {
+                return ResourceManager.GetString("WhereDoYouWantImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Yes.
         /// </summary>
         public static string YesMessage {
             get {
                 return ResourceManager.GetString("YesMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You must enter a confirm.
+        /// </summary>
+        public static string YouMostConfirPassword {
+            get {
+                return ResourceManager.GetString("YouMostConfirPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You must enter an email.
+        /// </summary>
+        public static string YouMostEnterEmail {
+            get {
+                return ResourceManager.GetString("YouMostEnterEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You must enter a valid email.
+        /// </summary>
+        public static string YouMostEnterEmailValid {
+            get {
+                return ResourceManager.GetString("YouMostEnterEmailValid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You must enter a phone.
+        /// </summary>
+        public static string YouMostEnterPhone {
+            get {
+                return ResourceManager.GetString("YouMostEnterPhone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You must enter a first name.
+        /// </summary>
+        public static string YouMostFirstName {
+            get {
+                return ResourceManager.GetString("YouMostFirstName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You must enter a confirm.
+        /// </summary>
+        public static string YouMustConfirm {
+            get {
+                return ResourceManager.GetString("YouMustConfirm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You must enter a password.
+        /// </summary>
+        public static string YouMustPassword {
+            get {
+                return ResourceManager.GetString("YouMustPassword", resourceCulture);
             }
         }
     }
