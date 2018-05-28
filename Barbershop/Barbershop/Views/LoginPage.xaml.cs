@@ -18,15 +18,26 @@
 			InitializeComponent ();
 		}
 
-        private async void Prueba(object sender, ItemTappedEventArgs e)
+        private async void Login(object sender, ItemTappedEventArgs e)
         {
             Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem item = sender as Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem;
             radialMenu.Close();
 
-            await Application.Current.MainPage.DisplayAlert(
-            "Error",
-            item.Text,
-            "Accept");
+            if (item.Text == "Facebook")
+            {
+                var mainViewModel = MainViewModel.GetInstance();
+                mainViewModel.Login.LoginFacebook();
+            }
+            else if (item.Text == "Instagram")
+            {
+                var mainViewModel = MainViewModel.GetInstance();
+                mainViewModel.Login.LoginInstagram();
+            }
+            else if(item.Text == "Linkedin")
+            {
+                var mainViewModel = MainViewModel.GetInstance();
+                mainViewModel.Login.LoginLinkedin();
+            }
         }
     }
 }

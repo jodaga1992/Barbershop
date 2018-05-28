@@ -110,16 +110,46 @@
                         </Image>
                     </StackLayout>-->
                     <StackLayout>
-                        <radialMenu:SfRadialMenu x:Name="radialMenu" LayoutType="Custom" CenterButtonRadius="24"  RimColor="Transparent" RimRadius="150" CenterButtonBackgroundColor="Transparent" CenterButtonBorderColor="Transparent" CenterButtonBorderThickness="3">
+                        <radialMenu:SfRadialMenu x:Name="radialMenu" 
+                                                 CenterButtonBackgroundColor="Transparent" 
+                                                 CenterButtonBorderColor="Transparent" 
+                                                 CenterButtonBorderThickness="3"
+                                                 CenterButtonRadius="24"  
+                                                 LayoutType="Custom" 
+                                                 RimColor="Transparent" 
+                                                 RimRadius="150" 
+                                                 VisibleSegmentsCount="12">
                             <radialMenu:SfRadialMenu.CenterButtonView>
-                                <Image x:Name="centerButtonImage" HeightRequest="22" WidthRequest="22"  Source="ic_chevron_right.png" Aspect="AspectFill" />
+                                <Image x:Name="centerButtonImage" 
+                                       Aspect="AspectFill"
+                                       BackgroundColor="Green"
+                                       HeightRequest="22"
+                                       Source="ic_people" 
+                                       WidthRequest="22"/>
                             </radialMenu:SfRadialMenu.CenterButtonView>
                             <radialMenu:SfRadialMenu.Items>
-                                <radialMenu:SfRadialMenuItem Text="facebook" TextColor="Transparent" ItemTapped="Prueba" Image="logo_facebook" ItemHeight="50" ItemWidth="50">
+                                <radialMenu:SfRadialMenuItem 
+                                    Text="Facebook" 
+                                    TextColor="Transparent" 
+                                    ItemTapped="Login" 
+                                    Image="logo_facebook" 
+                                    ItemHeight="50" 
+                                    ItemWidth="50">
                                 </radialMenu:SfRadialMenuItem>
-                                <radialMenu:SfRadialMenuItem Text="exit" TextColor="Transparent" ItemTapped="Prueba" Image="exit" ItemHeight="50" ItemWidth="50">
+                                <radialMenu:SfRadialMenuItem 
+                                    Text="Instagram" 
+                                    TextColor="Transparent" 
+                                    ItemTapped="Login" 
+                                    Image="instagram_logo3" 
+                                    ItemHeight="50" ItemWidth="50">
                                 </radialMenu:SfRadialMenuItem>
-                                <radialMenu:SfRadialMenuItem Text="gra" TextColor="Transparent" ItemTapped="Prueba" Image="grafig" ItemHeight="50" ItemWidth="50">
+                                <radialMenu:SfRadialMenuItem 
+                                    Text="Linkedin" 
+                                    TextColor="Transparent" 
+                                    ItemTapped="Login" 
+                                    Image="linkedin_logo1" 
+                                    ItemHeight="50" 
+                                    ItemWidth="50">
                                 </radialMenu:SfRadialMenuItem>
                             </radialMenu:SfRadialMenu.Items>
                         </radialMenu:SfRadialMenu>

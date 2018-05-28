@@ -193,6 +193,21 @@
            await Application.Current.MainPage.Navigation.PushAsync(new RegisterPage());
         }
 
+        public async void LoginFacebook()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new LoginFacebookPage());
+        }
+
+        public async void LoginInstagram()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new LoginInstagramPage());
+        }
+
+        public async void LoginLinkedin()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new LoginLinkedinPage());
+        }
+
         #endregion
 
 

@@ -6,7 +6,7 @@ namespace Barbershop.Helpers
 {
     using Xamarin.Forms;
     using Interfaces;
-    using Resources;
+    using barbershop.Resources;
 
     public static class Languages
     {

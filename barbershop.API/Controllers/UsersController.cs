@@ -9,6 +9,7 @@
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Validation;
     using System.IO;
     using System.Linq;
     using System.Net;
@@ -20,6 +21,171 @@
     public class UsersController : ApiController
     {
         private DataContext db = new DataContext();
+
+        [HttpPost]
+        [Route("LoginLinkedin")]
+        public async Task<IHttpActionResult> LoginLinkedin(LinkedinUser profile)
+        {
+            try
+            {
+                var user = await db.Users.Where(u => u.Email == profile.Id).FirstOrDefaultAsync();
+                if (user == null)
+                {
+                    user = new User
+                    {
+                        Email = profile.Id,
+                        FirstName = profile.FirstName,
+                        LastName = profile.LastName,
+                        ImagePath = "no_image",
+                        UserTypeId = 4,
+                        Telephone = "...",
+                    };
+
+                    db.Users.Add(user);
+                    UsersHelper.CreateUserASP(profile.Id, "User", profile.Id);
+                }
+                else
+                {
+                    user.FirstName = profile.FirstName;
+                    user.LastName = profile.LastName;
+                    user.ImagePath = "no_image";
+                    db.Entry(user).State = EntityState.Modified;
+                }
+
+                await db.SaveChangesAsync();
+                return Ok(true);
+            }
+            catch (DbEntityValidationException e)
+            {
+                var message = string.Empty;
+                foreach (var eve in e.EntityValidationErrors)
+                {
+                    message = string.Format("Entity of type \"{0}\" in state \"{1}\" has the following validation errors:",
+                        eve.Entry.Entity.GetType().Name, eve.Entry.State);
+                    foreach (var ve in eve.ValidationErrors)
+                    {
+                        message += string.Format("\n- Property: \"{0}\", Error: \"{1}\"",
+                            ve.PropertyName, ve.ErrorMessage);
+                    }
+                }
+
+                return BadRequest(message);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPost]
+        [Route("LoginInstagram")]
+        public async Task<IHttpActionResult> LoginInstagram(InstagramUser profile)
+        {
+            try
+            {
+                var user = await db.Users.Where(u => u.Email == profile.Id).FirstOrDefaultAsync();
+                if (user == null)
+                {
+                    user = new User
+                    {
+                        Email = profile.Id,
+                        FirstName = profile.FullName,
+                        LastName = ".",
+                        ImagePath = profile.ProfilePicture,
+                        UserTypeId = 3,
+                        Telephone = "...",
+                    };
+
+                    db.Users.Add(user);
+                    UsersHelper.CreateUserASP(profile.Id, "User", profile.Id);
+                }
+                else
+                {
+                    user.FirstName = profile.FullName;
+                    user.LastName = ".";
+                    user.ImagePath = profile.ProfilePicture;
+                    db.Entry(user).State = EntityState.Modified;
+                }
+
+                await db.SaveChangesAsync();
+                return Ok(true);
+            }
+            catch (DbEntityValidationException e)
+            {
+                var message = string.Empty;
+                foreach (var eve in e.EntityValidationErrors)
+                {
+                    message = string.Format("Entity of type \"{0}\" in state \"{1}\" has the following validation errors:",
+                        eve.Entry.Entity.GetType().Name, eve.Entry.State);
+                    foreach (var ve in eve.ValidationErrors)
+                    {
+                        message += string.Format("\n- Property: \"{0}\", Error: \"{1}\"",
+                            ve.PropertyName, ve.ErrorMessage);
+                    }
+                }
+
+                return BadRequest(message);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPost]
+        [Route("LoginFacebook")]
+        public async Task<IHttpActionResult> LoginFacebook(FacebookResponse profile)
+        {
+            try
+            {
+                var user = await db.Users.Where(u => u.Email == profile.Id).FirstOrDefaultAsync();
+                if (user == null)
+                {
+                    user = new User
+                    {
+                        Email = profile.Id,
+                        FirstName = profile.FirstName,
+                        LastName = profile.LastName,
+                        ImagePath = profile.Picture.Data.Url,
+                        UserTypeId = 2,
+                        Telephone = "...",
+                    };
+
+                    db.Users.Add(user);
+                    UsersHelper.CreateUserASP(profile.Id, "User", profile.Id);
+                }
+                else
+                {
+                    user.FirstName = profile.FirstName;
+                    user.LastName = profile.LastName;
+                    user.ImagePath = profile.Picture.Data.Url;
+                    db.Entry(user).State = EntityState.Modified;
+                }
+
+                await db.SaveChangesAsync();
+                return Ok(true);
+            }
+            catch (DbEntityValidationException e)
+            {
+                var message = string.Empty;
+                foreach (var eve in e.EntityValidationErrors)
+                {
+                    message = string.Format("Entity of type \"{0}\" in state \"{1}\" has the following validation errors:",
+                        eve.Entry.Entity.GetType().Name, eve.Entry.State);
+                    foreach (var ve in eve.ValidationErrors)
+                    {
+                        message += string.Format("\n- Property: \"{0}\", Error: \"{1}\"",
+                            ve.PropertyName, ve.ErrorMessage);
+                    }
+                }
+
+                return BadRequest(message);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
         [HttpPost]
         [Route("ChangePassword")]

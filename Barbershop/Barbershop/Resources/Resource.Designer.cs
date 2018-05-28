@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Barbershop.Resources {
+namespace barbershop.Resources {
     using System;
     
     

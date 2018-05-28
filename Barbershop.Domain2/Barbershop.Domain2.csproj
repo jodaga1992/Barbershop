@@ -53,6 +53,9 @@
     <Compile Include="Appointment.cs" />
     <Compile Include="Barber.cs" />
     <Compile Include="DataContext.cs" />
+    <Compile Include="FacebookResponse.cs" />
+    <Compile Include="InstagramUser.cs" />
+    <Compile Include="LinkedinUser.cs" />
     <Compile Include="Response.cs" />
     <Compile Include="Schedule.cs" />
     <Compile Include="StatusAppointment.cs" />

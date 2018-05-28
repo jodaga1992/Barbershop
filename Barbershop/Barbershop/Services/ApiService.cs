@@ -14,6 +14,160 @@ namespace Barbershop.Services
 
     public class ApiService 
     {
+        public async Task<Models.InstagramUser> GetInstagram(string token)
+        {
+            var requestUrl = "https://api.instagram.com/v1/users/self/?" +
+                "access_token=" + token;
+            var httpClient = new HttpClient();
+            var userJson = await httpClient.GetStringAsync(requestUrl);
+            var instagramResponse =
+                JsonConvert.DeserializeObject<Models.InstagramResponse>(userJson);
+            return instagramResponse.data;
+        }
+
+        public async Task<TokenResponse> LoginInstagram(
+            string urlBase,
+            string servicePrefix,
+            string controller,
+            Models.InstagramUser profile)
+        {
+            try
+            {
+                var request = JsonConvert.SerializeObject(profile);
+                var content = new StringContent(
+                    request,
+                    Encoding.UTF8,
+                    "application/json");
+                var client = new HttpClient();
+                client.BaseAddress = new Uri(urlBase);
+                var url = string.Format("{0}{1}", servicePrefix, controller);
+                var response = await client.PostAsync(url, content);
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    return null;
+                }
+
+                var tokenResponse = await GetToken(
+                    urlBase,
+                    profile.Id,
+                    profile.Id);
+                return tokenResponse;
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        public async Task<Models.LinkedinUser> GetLinkedin(string token)
+        {
+            var requestUrl = "https://api.linkedin.com/v1/people/~?format=json&oauth2_access_token=" + token;
+            var httpClient = new HttpClient();
+            var userJson = await httpClient.GetStringAsync(requestUrl);
+            var linkedinUser =
+                JsonConvert.DeserializeObject<Models.LinkedinUser>(userJson);
+            return linkedinUser;
+        }
+
+        public async Task<TokenResponse> LoginLinkedin(
+           string urlBase,
+           string servicePrefix,
+           string controller,
+           Models.LinkedinUser profile)
+        {
+            try
+            {
+                var request = JsonConvert.SerializeObject(profile);
+                var content = new StringContent(
+                    request,
+                    Encoding.UTF8,
+                    "application/json");
+                var client = new HttpClient();
+                client.BaseAddress = new Uri(urlBase);
+                var url = string.Format("{0}{1}", servicePrefix, controller);
+                var response = await client.PostAsync(url, content);
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    return null;
+                }
+
+                var tokenResponse = await GetToken(
+                    urlBase,
+                    profile.Id,
+                    profile.Id);
+                return tokenResponse;
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        public async Task<LinkedinTokenResponse> GetLinkedinToken(string code)
+        {
+            var requestUrl = "https://www.linkedin.com/oauth/v2/accessToken?" +
+                "grant_type=authorization_code" +
+                "&code=" + code +
+                "&redirect_uri=http://zulu-software.com/&client_id=78jj3nquoj0vwe&client_secret=Yf7vsH7jDua9vTxP";
+            var httpClient = new HttpClient();
+            var userJson = await httpClient.GetStringAsync(requestUrl);
+            var linkedinTokenResponse =
+                JsonConvert.DeserializeObject<LinkedinTokenResponse>(userJson);
+            return linkedinTokenResponse;
+        }
+
+
+        public async Task<Models.FacebookResponse> GetFacebook(string accessToken)
+        {
+            var requestUrl = "https://graph.facebook.com/v2.8/me/?fields=name," +
+                "picture.width(999),cover,age_range,devices,email,gender," +
+                "is_verified,birthday,languages,work,website,religion," +
+                "location,locale,link,first_name,last_name," +
+                "hometown&access_token=" + accessToken;
+            var httpClient = new HttpClient();
+            var userJson = await httpClient.GetStringAsync(requestUrl);
+            var facebookResponse =
+                JsonConvert.DeserializeObject<Models.FacebookResponse>(userJson);
+            return facebookResponse;
+        }
+
+        public async Task<TokenResponse> LoginFacebook(
+            string urlBase,
+            string servicePrefix,
+            string controller,
+            Models.FacebookResponse profile)
+        {
+            try
+            {
+                var request = JsonConvert.SerializeObject(profile);
+                var content = new StringContent(
+                    request,
+                    Encoding.UTF8,
+                    "application/json");
+                var client = new HttpClient();
+                client.BaseAddress = new Uri(urlBase);
+                var url = string.Format("{0}{1}", servicePrefix, controller);
+                var response = await client.PostAsync(url, content);
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    return null;
+                }
+
+                var tokenResponse = await GetToken(
+                    urlBase,
+                    profile.Id,
+                    profile.Id);
+                return tokenResponse;
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
         public async Task<Response> CheckConnection()
         {
             if (!CrossConnectivity.Current.IsConnected)

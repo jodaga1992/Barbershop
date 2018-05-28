@@ -90,6 +90,7 @@
   <ItemGroup>
     <Compile Include="Implementations\Config.cs" />
     <Compile Include="Implementations\Localize.cs" />
+    <Compile Include="Implementations\LoginPageRenderer.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="Entitlements.plist" />
@@ -160,6 +161,9 @@
     <PackageReference Include="Xam.Plugins.Settings">
       <Version>4.0.0.7</Version>
     </PackageReference>
+    <PackageReference Include="Xamarin.Auth">
+      <Version>1.6.0.2</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.122203" />
   </ItemGroup>
   <ItemGroup>
@@ -194,6 +198,15 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\ic_date_range.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\instagram_logo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\linkedin_logo1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

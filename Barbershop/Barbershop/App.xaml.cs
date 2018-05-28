@@ -7,6 +7,7 @@
     using System;
     using Services;
     using Models;
+    using System.Threading.Tasks;
 
     public partial class App : Application
     {
@@ -59,6 +60,151 @@
                 return new Action(() => App.Current.MainPage = new NavigationPage(new LoginPage()));
             }
         }
+
+        public static async Task NavigateToProfile(Models.FacebookResponse profile)
+        {
+            if (profile == null)
+            {
+                Application.Current.MainPage = new NavigationPage(new LoginPage());
+                return;
+            }
+
+            var apiService = new ApiService();
+            var dataService = new DataService();
+
+            var apiSecurity = Application.Current.Resources["APISecurity"].ToString();
+            var token = await apiService.LoginFacebook(
+                apiSecurity,
+                "/api",
+                "/Users/LoginFacebook",
+                profile);
+
+            if (token == null)
+            {
+                Application.Current.MainPage = new NavigationPage(new LoginPage());
+                return;
+            }
+
+            var user = await apiService.GetUserByEmail(
+                apiSecurity,
+                "/api",
+                "/Users/GetUserByEmail",
+                token.TokenType,
+                token.AccessToken,
+                token.UserName);
+
+            UserLocal userLocal = null;
+            if (user != null)
+            {
+                userLocal = Converter.ToUserLocal(user);
+                dataService.DeleteAllAndInsert(userLocal);
+                dataService.DeleteAllAndInsert(token);
+            }
+
+            var mainViewModel = MainViewModel.GetInstance();
+            mainViewModel.Token = token;
+            mainViewModel.User = userLocal;
+            mainViewModel.Barbershops = new BarbershopsViewModel();
+            Application.Current.MainPage = new MasterPage();
+            Settings.IsRemembered = "true";
+        }
+
+        public static async Task NavigateToInstagramProfile(Models.InstagramUser profile)
+        {
+            if (profile == null)
+            {
+                Application.Current.MainPage = new NavigationPage(new LoginPage());
+                return;
+            }
+
+            var apiService = new ApiService();
+            var dataService = new DataService();
+
+            var apiSecurity = Application.Current.Resources["APISecurity"].ToString();
+            var token = await apiService.LoginInstagram(
+                apiSecurity,
+                "/api",
+                "/Users/LoginInstagram",
+                profile);
+
+            if (token == null)
+            {
+                Application.Current.MainPage = new NavigationPage(new LoginPage());
+                return;
+            }
+
+            var user = await apiService.GetUserByEmail(
+                apiSecurity,
+                "/api",
+                "/Users/GetUserByEmail",
+                token.TokenType,
+                token.AccessToken,
+                token.UserName);
+
+            UserLocal userLocal = null;
+            if (user != null)
+            {
+                userLocal = Converter.ToUserLocal(user);
+                dataService.DeleteAllAndInsert(userLocal);
+                dataService.DeleteAllAndInsert(token);
+            }
+
+            var mainViewModel = MainViewModel.GetInstance();
+            mainViewModel.Token = token;
+            mainViewModel.User = userLocal;
+            mainViewModel.Barbershops = new BarbershopsViewModel();
+            Application.Current.MainPage = new MasterPage();
+            Settings.IsRemembered = "true";
+        }
+
+        public static async void NavigateToLinkedinProfile(Models.LinkedinUser profile)
+        {
+            if (profile == null)
+            {
+                Application.Current.MainPage = new NavigationPage(new LoginPage());
+                return;
+            }
+
+            var apiService = new ApiService();
+            var dataService = new DataService();
+
+            var apiSecurity = Application.Current.Resources["APISecurity"].ToString();
+            var token = await apiService.LoginLinkedin(
+                apiSecurity,
+                "/api",
+                "/Users/LoginLinkedin",
+                profile);
+
+            if (token == null)
+            {
+                Application.Current.MainPage = new NavigationPage(new LoginPage());
+                return;
+            }
+
+            var user = await apiService.GetUserByEmail(
+                apiSecurity,
+                "/api",
+                "/Users/GetUserByEmail",
+                token.TokenType,
+                token.AccessToken,
+                token.UserName);
+
+            UserLocal userLocal = null;
+            if (user != null)
+            {
+                userLocal = Converter.ToUserLocal(user);
+                dataService.DeleteAllAndInsert(userLocal);
+                dataService.DeleteAllAndInsert(token);
+            }
+
+            var mainViewModel = MainViewModel.GetInstance();
+            mainViewModel.Token = token;
+            mainViewModel.User = userLocal;
+            mainViewModel.Barbershops = new BarbershopsViewModel();
+            Application.Current.MainPage = new MasterPage();
+            Settings.IsRemembered = "true";
+        }
+
         protected override void OnStart()
         {
             // Handle when your app starts
