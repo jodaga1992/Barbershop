@@ -117,7 +117,7 @@ namespace Barbershop.ViewModels
             {
                 await Application.Current.MainPage.DisplayAlert(
                     Languages.Error,
-                    "Last Name",
+                    Languages.LastNameLabel,
                     Languages.Accept);
                 return;
             }
@@ -240,7 +240,7 @@ namespace Barbershop.ViewModels
             this.IsEnabled = true;
 
             await Application.Current.MainPage.DisplayAlert(
-                "Confirm",
+                Languages.ConfirmMessage,
                 "The user was create, now you can login with this email and password.",
                 Languages.Accept);
             await Application.Current.MainPage.Navigation.PopAsync();
