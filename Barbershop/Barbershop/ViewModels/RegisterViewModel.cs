@@ -102,6 +102,18 @@ namespace Barbershop.ViewModels
             }
         }
 
+        public ICommand ChangeImageCommand
+        {
+            get
+            {
+                return new RelayCommand(ChangeImage);
+            }
+        }
+
+        #endregion
+
+        #region Methods
+
         private async void Register()
         {
             if (string.IsNullOrEmpty(this.FirstName))
@@ -243,14 +255,6 @@ namespace Barbershop.ViewModels
                 "The user was create, now you can login with this email and password.",
                 Languages.Accept);
             await Application.Current.MainPage.Navigation.PopAsync();
-        }
-
-        public ICommand ChangeImageCommand
-        {
-            get
-            {
-                return new RelayCommand(ChangeImage);
-            }
         }
 
         private async void ChangeImage()
