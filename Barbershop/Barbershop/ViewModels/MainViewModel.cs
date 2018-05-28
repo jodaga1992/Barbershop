@@ -1,10 +1,6 @@
-﻿
-namespace Barbershop.ViewModels
+﻿namespace Barbershop.ViewModels
 {
-    using System;
-    using System.Collections.Generic;
     using System.Collections.ObjectModel;
-
     using Models;
 
     public class MainViewModel : BaseViewModel
@@ -20,10 +16,7 @@ namespace Barbershop.ViewModels
             get;
             set;
         }
-
-        //DESAPARECE PARA CCAMBIO DE PASSWORD
-        public string TokenType { get; set; }
-
+        
         public ObservableCollection<MenuItemViewModel> Menus
         {
             get;

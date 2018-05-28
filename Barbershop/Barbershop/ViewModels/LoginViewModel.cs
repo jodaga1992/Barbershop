@@ -1,12 +1,11 @@
 ﻿namespace Barbershop.ViewModels
 {
-    using Helpers;
-    using GalaSoft.MvvmLight.Command;
-    using Views;
     using System.Windows.Input;
-    using Xamarin.Forms;
+    using GalaSoft.MvvmLight.Command;
+    using Helpers;
     using Services;
-    using System;
+    using Views;
+    using Xamarin.Forms;
 
     public class LoginViewModel : BaseViewModel
     {
@@ -61,9 +60,6 @@
             this.dataService = new DataService();
             this.IsRemembered = true;
             this.IsEnabled = true;
-
-            // this.Email = "mj@g.com";
-            //this.Password = "1234";
         }
         #endregion
 
@@ -77,6 +73,19 @@
 
         }
 
+        public ICommand RegisterCommand
+        {
+            get
+            {
+                return new RelayCommand(Register);
+            }
+
+        }
+
+        #endregion
+
+        #region Methods
+        
         private async void Login()
         {
             if (string.IsNullOrEmpty(this.Email))
@@ -167,7 +176,7 @@
 
             this.dataService.DeleteAllAndInsert(userLocal);
             this.dataService.DeleteAllAndInsert(token);
-            
+
             this.IsRunning = false;
             this.IsEnabled = true;
             this.Email = string.Empty;
@@ -178,19 +187,10 @@
 
         }
 
-        public ICommand RegisterCommand
-        {
-            get
-            {
-                return new RelayCommand(Register);
-            }
-
-        }
-
         private async void Register()
         {
-           MainViewModel.GetInstance().Register = new RegisterViewModel();
-           await Application.Current.MainPage.Navigation.PushAsync(new RegisterPage());
+            MainViewModel.GetInstance().Register = new RegisterViewModel();
+            await Application.Current.MainPage.Navigation.PushAsync(new RegisterPage());
         }
 
         public async void LoginFacebook()
@@ -207,9 +207,7 @@
         {
             await Application.Current.MainPage.Navigation.PushAsync(new LoginLinkedinPage());
         }
-
         #endregion
-
 
     }
 }

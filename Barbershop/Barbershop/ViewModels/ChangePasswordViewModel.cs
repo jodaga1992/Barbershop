@@ -1,5 +1,4 @@
-﻿
-namespace Barbershop.ViewModels
+﻿namespace Barbershop.ViewModels
 {
     using System;
     using System.Threading;
@@ -24,8 +23,6 @@ namespace Barbershop.ViewModels
         private bool isRunning;
         private bool isEnabled;
         private string progress;
-        private ImageSource imageSource;
-        private MediaFile file;
         #endregion
 
         #region Properties

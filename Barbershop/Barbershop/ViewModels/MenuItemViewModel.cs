@@ -1,11 +1,9 @@
-﻿
-namespace Barbershop.ViewModels
+﻿namespace Barbershop.ViewModels
 {
-    using Views;
+    using System.Windows.Input;
     using GalaSoft.MvvmLight.Command;
     using Helpers;
-    using System;
-    using System.Windows.Input;
+    using Views;
     using Xamarin.Forms;
 
     public class MenuItemViewModel
@@ -41,7 +39,6 @@ namespace Barbershop.ViewModels
                     var mainViewModel = MainViewModel.GetInstance();
                     mainViewModel.Token = null;
                     mainViewModel.User = null;
-                    mainViewModel.TokenType = string.Empty;
                     Application.Current.MainPage = new NavigationPage(new LoginPage());
                 }
                 

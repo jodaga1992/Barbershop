@@ -1,16 +1,15 @@
 ﻿namespace Barbershop.ViewModels
 {
-    using Helpers;
-    using GalaSoft.MvvmLight.Command;
-    using Models;
-    using Services;
     using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
-    using System.Text;
-    using System.Windows.Input;
-    using Xamarin.Forms;
     using System.Linq;
+    using System.Windows.Input;
+    using GalaSoft.MvvmLight.Command;
+    using Helpers;
+    using Models;
+    using Services;
+    using Xamarin.Forms;
 
     public class ScheduleViewModel : BaseViewModel
     {

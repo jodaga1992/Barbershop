@@ -1,13 +1,13 @@
 ﻿namespace Barbershop
 {
-    using Xamarin.Forms;
+    using System;
+    using System.Threading.Tasks;
     using Helpers;
+    using Models;
+    using Services;
     using ViewModels;
     using Views;
-    using System;
-    using Services;
-    using Models;
-    using System.Threading.Tasks;
+    using Xamarin.Forms;
 
     public partial class App : Application
     {

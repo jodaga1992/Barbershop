@@ -1,14 +1,11 @@
 ﻿namespace Barbershop.ViewModels
 {
-    using Barbershop.Domain2;
-    using Barbershop.Helpers;
-    using Barbershop.Services;
-    using GalaSoft.MvvmLight.Command;
-    using Models;
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
     using System.Windows.Input;
+    using Domain2;
+    using GalaSoft.MvvmLight.Command;
+    using Helpers;
+    using Models;
+    using Services;
     using Xamarin.Forms;
 
     public class AppointmentItemViewModel : AppointmentResponse
@@ -141,7 +138,6 @@
                 await App.Navigator.PopAsync();
             }
         }
-
         #endregion
     }
 }

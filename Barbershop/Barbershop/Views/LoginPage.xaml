@@ -79,7 +79,7 @@
                         Orientation="Horizontal"
                         HorizontalOptions="Center"
                         VerticalOptions="CenterAndExpand">
-                            <Button
+                        <Button
                                 BackgroundColor="SeaGreen"
                                 BorderRadius="24" 
                                 Command="{Binding LoginCommand}"
@@ -88,8 +88,8 @@
                                 IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
                                 TextColor="White"
                                 Text="Login">
-                            </Button>
-                            <Button
+                        </Button>
+                        <Button
                                 BackgroundColor="#642EFE"
                                 BorderRadius="24"
                                 Command="{Binding RegisterCommand}"
@@ -98,17 +98,8 @@
                                 IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
                                 TextColor="White"
                                 Text="Register">
-                            </Button>
+                        </Button>
                     </StackLayout>
-                    <!--<StackLayout
-                        HorizontalOptions="Center"
-                        Orientation="Horizontal"
-                        VerticalOptions="EndAndExpand">
-                        <Image
-                                Source="logo_facebook"
-                                WidthRequest="80">
-                        </Image>
-                    </StackLayout>-->
                     <StackLayout>
                         <radialMenu:SfRadialMenu x:Name="radialMenu" 
                                                  CenterButtonBackgroundColor="Transparent" 
@@ -159,7 +150,7 @@
                     AnimationType="Ball"
                     AbsoluteLayout.LayoutBounds=".5,.5,.5,.5"
                     AbsoluteLayout.LayoutFlags="All"
-                    BackgroundColor="Transparent"
+                    BackgroundColor="Silver"
                     HorizontalOptions="Center"
                     TextColor="Black"
                     IsVisible="{Binding IsRunning, Mode=TwoWay}"

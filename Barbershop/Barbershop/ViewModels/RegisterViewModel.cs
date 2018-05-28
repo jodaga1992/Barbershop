@@ -1,5 +1,4 @@
-﻿
-namespace Barbershop.ViewModels
+﻿namespace Barbershop.ViewModels
 {
     using System.Windows.Input;
     using Domain2;
@@ -12,7 +11,6 @@ namespace Barbershop.ViewModels
 
     public class RegisterViewModel : BaseViewModel
     {
-        // hola bibli 29.03.2018
         #region Services
         private ApiService apiService;
         #endregion
@@ -89,10 +87,7 @@ namespace Barbershop.ViewModels
             this.ImageSource = "no_image";
         }
         #endregion
-
-        #region Methods
-        #endregion 
-
+        
         #region Commands
         public ICommand RegisterCommand
         {

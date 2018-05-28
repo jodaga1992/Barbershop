@@ -1,14 +1,14 @@
 ﻿namespace Barbershop.ViewModels
 {
-    using Models;
-    using Services;
-    using Helpers;
-    using Xamarin.Forms;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
     using System.Linq;
     using System.Windows.Input;
     using GalaSoft.MvvmLight.Command;
+    using Helpers;
+    using Models;
+    using Services;
+    using Xamarin.Forms;
 
     public class BarberViewModel : BaseViewModel
     {

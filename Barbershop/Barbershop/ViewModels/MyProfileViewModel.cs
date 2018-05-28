@@ -1,8 +1,5 @@
-﻿
-namespace Barbershop.ViewModels
+﻿namespace Barbershop.ViewModels
 {
-    using System;
-
     using System.Windows.Input;
     using GalaSoft.MvvmLight.Command;
     using Helpers;
@@ -73,19 +70,30 @@ namespace Barbershop.ViewModels
                 return new RelayCommand(ChangePassword);
             }
         }
-
-        private async void ChangePassword()
-        {
-            MainViewModel.GetInstance().ChangePassword = new ChangePasswordViewModel();
-            await App.Navigator.PushAsync(new ChangePasswordPage());
-        }
-
+        
         public ICommand ChangeImageCommand
         {
             get
             {
                 return new RelayCommand(ChangeImage);
             }
+        }
+        
+        public ICommand SaveCommand
+        {
+            get
+            {
+                return new RelayCommand(Save);
+            }
+        }
+
+        #endregion
+
+        #region Methods
+        private async void ChangePassword()
+        {
+            MainViewModel.GetInstance().ChangePassword = new ChangePasswordViewModel();
+            await App.Navigator.PushAsync(new ChangePasswordPage());
         }
 
         private async void ChangeImage()
@@ -136,14 +144,6 @@ namespace Barbershop.ViewModels
                     var stream = file.GetStream();
                     return stream;
                 });
-            }
-        }
-
-        public ICommand SaveCommand
-        {
-            get
-            {
-                return new RelayCommand(Save);
             }
         }
 

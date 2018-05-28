@@ -1,6 +1,4 @@
-﻿
-
-namespace Barbershop.ViewModels
+﻿namespace Barbershop.ViewModels
 {
     using System.Collections.Generic;
     using System.ComponentModel;
