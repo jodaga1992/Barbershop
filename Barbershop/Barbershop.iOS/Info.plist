@@ -50,7 +50,15 @@
 	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
 	<string>Barbershop</string>
-
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>es</string>
+		<string>pl</string>
+		<string>da</string>
+		<string>ru</string>
+	</array>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
 	<key>NSCameraUsageDescription</key>
 	<string>NSPhotoLibraryUsageDescription</string>
 	<key>NSPhotoLibraryUsageDescription</key>

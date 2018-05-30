@@ -37,7 +37,8 @@
         private async void AddAppointment()
         {            
             var answer = await Application.Current.MainPage.DisplayAlert(
-                "Confirmacion", "¿Seguro que desea apartar esta cita", "Si", "No");
+                Languages.ConfirmMessage, Languages.SeparateAppointmentConfirm, 
+                Languages.YesMessage, Languages.NoMessage);
             if (answer)
             {
                 this.apiService = new ApiService();
@@ -78,8 +79,8 @@
                 }
                 mainViewModel.Schedule.IsRefreshing = false;
                 await Application.Current.MainPage.DisplayAlert(
-                "Confirm",
-                "La cita fue apartada",
+                Languages.ConfirmMessage,
+                Languages.AppointmentWasseparated,
                 Languages.Accept);
                 await App.Navigator.PopAsync();
             }
@@ -88,7 +89,7 @@
         private async void CancelAppointment()
         {
             var answer = await Application.Current.MainPage.DisplayAlert(
-                "Confirmacion", "¿Seguro que desea cancelar esta cita", "Si", "No");
+                Languages.ConfirmMessage, Languages.CancelAppointmentConfirm, Languages.YesMessage, Languages.NoMessage);
             if (answer)
             {
                 this.apiService = new ApiService();
@@ -132,8 +133,8 @@
                 }
                 mainViewModel.Appointments.IsRefreshing = false;
                 await Application.Current.MainPage.DisplayAlert(
-                "Confirm",
-                "La cita fue Cancelada",
+                Languages.ConfirmMessage,
+                Languages.AppointmentCanceled,
                 Languages.Accept);
                 await App.Navigator.PopAsync();
             }

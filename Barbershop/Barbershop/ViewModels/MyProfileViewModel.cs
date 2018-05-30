@@ -104,19 +104,19 @@
                 CrossMedia.Current.IsTakePhotoSupported)
             {
                 var source = await Application.Current.MainPage.DisplayActionSheet(
-                    "Where do you want to take the image?",
-                    "Cancel",
+                    Languages.WhereDoYouWantImage,
+                    Languages.Cancel,
                     null,
-                    "From Gallery",
-                    "From Camera");
+                    Languages.FromGallery,
+                    Languages.FromCamera);
 
-                if (source == "Cancel")
+                if (source == Languages.Cancel)
                 {
                     this.file = null;
                     return;
                 }
 
-                if (source == "From Camera")
+                if (source == Languages.FromCamera)
                 {
                     this.file = await CrossMedia.Current.TakePhotoAsync(
                         new StoreCameraMediaOptions
@@ -153,7 +153,7 @@
             {
                 await Application.Current.MainPage.DisplayAlert(
                     Languages.Error,
-                    "You must enter a first name",
+                    Languages.YouMostFirstName,
                     Languages.Accept);
                 return;
             }
@@ -162,7 +162,7 @@
             {
                 await Application.Current.MainPage.DisplayAlert(
                     Languages.Error,
-                    "Last Name",
+                    Languages.LastNameLabel,
                     Languages.Accept);
                 return;
             }
@@ -180,7 +180,7 @@
             {
                 await Application.Current.MainPage.DisplayAlert(
                     Languages.Error,
-                    "You must enter a valid email.",
+                    Languages.YouMostEnterEmailValid,
                     Languages.Accept);
                 return;
             }
@@ -189,7 +189,7 @@
             {
                 await Application.Current.MainPage.DisplayAlert(
                     Languages.Error,
-                    "You must enter a phone.",
+                    Languages.YouMostEnterPhone,
                     Languages.Accept);
                 return;
             }
