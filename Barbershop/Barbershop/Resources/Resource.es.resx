@@ -151,7 +151,7 @@
     <value>Nombre</value>
   </data>
   <data name="ForgotPasswordLabel" xml:space="preserve">
-    <value>olvidaste tu password ?</value>
+    <value>¿Olvidaste tu password ?</value>
   </data>
   <data name="LastNameLabel" xml:space="preserve">
     <value>Apellido</value>
