@@ -118,19 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Accept" xml:space="preserve">
-    <value>Accept</value>
+    <value>Aceptar</value>
   </data>
   <data name="BarbershopTitle" xml:space="preserve">
-    <value>Barbershop</value>
+    <value>Barberia</value>
   </data>
   <data name="ChangeImageLabel" xml:space="preserve">
-    <value>Change Image</value>
+    <value>Cambiar imagen</value>
   </data>
   <data name="ChangePasswordBtn" xml:space="preserve">
-    <value>Change Passwod</value>
+    <value>Cambiar clave</value>
   </data>
   <data name="ConfirmMessage" xml:space="preserve">
-    <value>Confirm</value>
+    <value>Confirmar</value>
   </data>
   <data name="EmailLabel" xml:space="preserve">
     <value>Email</value>
@@ -139,46 +139,46 @@
     <value>Email</value>
   </data>
   <data name="EmailValidation" xml:space="preserve">
-    <value>Validar email</value>
+    <value>Validar correo electrónico</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Error</value>
   </data>
   <data name="FirstNameLabel" xml:space="preserve">
-    <value>First Name</value>
+    <value>Nombre</value>
   </data>
   <data name="FirstNamePlaceholder" xml:space="preserve">
-    <value>First Name....</value>
+    <value>Nombre</value>
   </data>
   <data name="ForgotPasswordLabel" xml:space="preserve">
-    <value>forgot your password ?</value>
+    <value>¿Olvidaste tu password ?</value>
   </data>
   <data name="LastNameLabel" xml:space="preserve">
-    <value>Last Name</value>
+    <value>Apellido</value>
   </data>
   <data name="LastNamePlaceholder" xml:space="preserve">
-    <value>Last Name...</value>
+    <value>Apellido</value>
   </data>
   <data name="LeaveMessage" xml:space="preserve">
-    <value>Are you sure you want to leave?</value>
+    <value>¿ Esta seguro de salir ?</value>
   </data>
   <data name="LoadingLabel" xml:space="preserve">
-    <value>Loading...</value>
+    <value>Cargando...</value>
   </data>
   <data name="LoginBtn" xml:space="preserve">
-    <value>Login</value>
+    <value>Entrar</value>
   </data>
   <data name="LogOutLabel" xml:space="preserve">
-    <value>Log Out</value>
+    <value>Salir</value>
   </data>
   <data name="MyProfileTitle" xml:space="preserve">
-    <value>My Profile</value>
+    <value>Mi perfil</value>
   </data>
   <data name="NoMessage" xml:space="preserve">
     <value>No</value>
   </data>
   <data name="PasswordEnterPlaceholder" xml:space="preserve">
-    <value>Enter your password</value>
+    <value>Ingresa tu password</value>
   </data>
   <data name="PasswordLabel" xml:space="preserve">
     <value>Password</value>
@@ -187,135 +187,135 @@
     <value>Perfil</value>
   </data>
   <data name="PhoneLabel" xml:space="preserve">
-    <value>Phone</value>
+    <value>Num Telefono</value>
   </data>
   <data name="RegisterBtn" xml:space="preserve">
-    <value>Register</value>
+    <value>Registrar</value>
   </data>
   <data name="SaveBtn" xml:space="preserve">
-    <value>Save</value>
+    <value>Guardar</value>
   </data>
   <data name="SchedulesTitle" xml:space="preserve">
-    <value>Schedules</value>
+    <value>Horarios</value>
   </data>
   <data name="StatisticsLabel" xml:space="preserve">
-    <value>Statistics</value>
+    <value>Estadisticas</value>
   </data>
   <data name="YesMessage" xml:space="preserve">
-    <value>Yes</value>
+    <value>Si</value>
   </data>
   <data name="ChangePasswordTitle" xml:space="preserve">
-    <value>Change Password</value>
+    <value>Cambiar Password</value>
   </data>
   <data name="ConfirmPasswordLabel" xml:space="preserve">
-    <value>Confirm</value>
+    <value>Confirmar</value>
   </data>
   <data name="ConfirmPasswordPlaceholder" xml:space="preserve">
-    <value>Confirm</value>
+    <value>Confirmar</value>
   </data>
   <data name="CurrentePasswordPlaceholder" xml:space="preserve">
-    <value>Current Password</value>
+    <value>Password Actual</value>
   </data>
   <data name="CurrentPasswordLabel" xml:space="preserve">
-    <value>Change Password</value>
+    <value>Cambiar Password</value>
   </data>
   <data name="NewPasswordLabel" xml:space="preserve">
-    <value>New Password</value>
+    <value>Nuevo Password</value>
   </data>
   <data name="NewPasswordPlaceholder" xml:space="preserve">
-    <value>New Password</value>
+    <value>Nuevo Password</value>
   </data>
   <data name="LastNameLabel1" xml:space="preserve">
-    <value>Last Name</value>
+    <value>Apellido</value>
   </data>
   <data name="LastNamePlaceholder1" xml:space="preserve">
-    <value>Last Name...</value>
+    <value>Apellido..</value>
   </data>
   <data name="LoginTitle" xml:space="preserve">
-    <value>Login</value>
+    <value>Ingresar</value>
   </data>
   <data name="MenuTitle" xml:space="preserve">
     <value>Menu</value>
   </data>
   <data name="NameLabel" xml:space="preserve">
-    <value>Name</value>
+    <value>Nombre</value>
   </data>
   <data name="NamePlaceholder" xml:space="preserve">
-    <value>Name...</value>
+    <value>Nombre</value>
   </data>
   <data name="PhonePlaceholder" xml:space="preserve">
-    <value>Phone....</value>
+    <value>Telefono..</value>
   </data>
   <data name="RegisterTitle" xml:space="preserve">
-    <value>Register</value>
+    <value>Registrar</value>
   </data>
   <data name="TouchChangeImage" xml:space="preserve">
-    <value>touch to change image</value>
+    <value>Toque para cambiar imagen</value>
   </data>
   <data name="ChangeConfirPassword" xml:space="preserve">
-    <value>Chage Password Confirm</value>
+    <value>Cambio de password confirmado</value>
   </data>
   <data name="ErrorChargingPassword" xml:space="preserve">
-    <value>Error Changing Password</value>
+    <value>Error cambiando password</value>
   </data>
   <data name="ThePasswordHaveSix" xml:space="preserve">
-    <value>The password must have at least seix (6) characters</value>
+    <value>El password debe tener al menos 6 caracteres</value>
   </data>
   <data name="ThePasswordNotMatch" xml:space="preserve">
-    <value>The password and confirm does not match</value>
+    <value>El password y la confirmacion no coinciden</value>
   </data>
   <data name="YouMustConfirm" xml:space="preserve">
-    <value>You must enter a confirm</value>
+    <value>Debes confirmar un password</value>
   </data>
   <data name="YouMustPassword" xml:space="preserve">
-    <value>You must enter a password</value>
+    <value>Debes ingresar un password</value>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Cancelar</value>
   </data>
   <data name="FromCamera" xml:space="preserve">
-    <value>FromCamera</value>
+    <value>De camara</value>
   </data>
   <data name="FromGallery" xml:space="preserve">
-    <value>From Gallery</value>
+    <value>De la galería</value>
   </data>
   <data name="SomethingWasWrong" xml:space="preserve">
-    <value>Something was wrong, please try later</value>
+    <value>Algo estuvo mal, por favor intente más tarde</value>
   </data>
   <data name="TheUserWasCreate" xml:space="preserve">
-    <value>The user was create, now you can login with this email and password</value>
+    <value>El usuario fue crear, ahora puede iniciar sesión con este correo electrónico y contraseña</value>
   </data>
   <data name="WhereDoYouWantImage" xml:space="preserve">
-    <value>Where do you want to take the image?</value>
+    <value>¿Dónde quieres tomar la imagen?</value>
   </data>
   <data name="YouMostConfirPassword" xml:space="preserve">
-    <value>You must enter a confirm</value>
+    <value>Debes ingresar un confirmar</value>
   </data>
   <data name="YouMostEnterEmail" xml:space="preserve">
-    <value>You must enter an email</value>
+    <value>Debe ingresar un correo electrónico</value>
   </data>
   <data name="YouMostEnterEmailValid" xml:space="preserve">
-    <value>You must enter a valid email</value>
+    <value>Debes ingresar un correo electrónico válido</value>
   </data>
   <data name="YouMostEnterPhone" xml:space="preserve">
-    <value>You must enter a phone</value>
+    <value>Debes ingresar un teléfono</value>
   </data>
   <data name="YouMostFirstName" xml:space="preserve">
-    <value>You must enter a first name</value>
+    <value>Debes ingresar un nombre</value>
   </data>
   <data name="AppointmentCanceled" xml:space="preserve">
-    <value>The appointment was canceled</value>
+    <value>La cita fue cancelada</value>
   </data>
   <data name="AppointmentWasseparated" xml:space="preserve">
-    <value>The appointment was separated</value>
+    <value>La cita fue separada</value>
   </data>
   <data name="CancelAppointmentConfirm" xml:space="preserve">
-    <value>Are you sure you want to cancel this appointment?</value>
+    <value>¿Seguro que desea cancelar esta cita?</value>
   </data>
   <data name="MyAppointmentsLabel" xml:space="preserve">
-    <value>My appointments</value>
+    <value>Mis citas</value>
   </data>
   <data name="SeparateAppointmentConfirm" xml:space="preserve">
-    <value>Do you want to separate this appointment?</value>
+    <value>¿Desea separar esta cita?</value>
   </data>
 </root>

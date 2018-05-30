@@ -97,7 +97,7 @@
             {
                 await Application.Current.MainPage.DisplayAlert(
                     Languages.Error,
-                    "You must enter a password.",
+                    Languages.YouMustPassword,
                     Languages.Accept);
                 return;
             }
@@ -106,7 +106,7 @@
             {
                 await Application.Current.MainPage.DisplayAlert(
                     Languages.Error,
-                    "The password must have at least seix (6) characters.",
+                    Languages.ThePasswordHaveSix,
                     Languages.Accept);
                 return;
             }
@@ -115,7 +115,7 @@
             {
                 await Application.Current.MainPage.DisplayAlert(
                     Languages.Error,
-                    "You must enter a password.",
+                    Languages.YouMustPassword,
                     Languages.Accept);
                 return;
             }
@@ -124,7 +124,7 @@
             {
                 await Application.Current.MainPage.DisplayAlert(
                     Languages.Error,
-                    "You must enter a password.",
+                    Languages.YouMustConfirm,
                     Languages.Accept);
                 return;
             }
@@ -133,7 +133,7 @@
             {
                 await Application.Current.MainPage.DisplayAlert(
                     Languages.Error,
-                    "The password must have at least seix (6) characters.",
+                    Languages.ThePasswordHaveSix,
                     Languages.Accept);
                 return;
             }
@@ -142,7 +142,7 @@
             {
                 await Application.Current.MainPage.DisplayAlert(
                     Languages.Error,
-                    "You must enter a confirm.",
+                    Languages.YouMustConfirm,
                     Languages.Accept);
                 return;
             }
@@ -151,7 +151,7 @@
             {
                 await Application.Current.MainPage.DisplayAlert(
                     Languages.Error,
-                    "The password and confirm does not match",
+                    Languages.ThePasswordNotMatch,
                     Languages.Accept);
                 return;
             }
@@ -193,7 +193,7 @@
                 this.IsEnabled = true;
                 await Application.Current.MainPage.DisplayAlert(
                     Languages.Error,
-                    "Error Changing Password",
+                    Languages.ErrorChargingPassword,
                     Languages.Accept);
                 return;
             }
@@ -204,8 +204,8 @@
             this.IsEnabled = true;
 
             await Application.Current.MainPage.DisplayAlert(
-                "Confirm",
-                "Chage Password Confirm",
+                Languages.ConfirmMessage,
+                Languages.ChangeConfirPassword,
                 Languages.Accept);
             await App.Navigator.PopAsync();
 

@@ -115,7 +115,7 @@
             {
                 await Application.Current.MainPage.DisplayAlert(
                     Languages.Error,
-                    "You must enter a first name",
+                    Languages.YouMostFirstName,
                     Languages.Accept);
                 return;
             }
@@ -124,7 +124,7 @@
             {
                 await Application.Current.MainPage.DisplayAlert(
                     Languages.Error,
-                    "Last Name",
+                    Languages.LastNameLabel,
                     Languages.Accept);
                 return;
             }
@@ -142,7 +142,7 @@
             {
                 await Application.Current.MainPage.DisplayAlert(
                     Languages.Error,
-                    "You must enter a valid email.",
+                    Languages.YouMostEnterEmailValid,
                     Languages.Accept);
                 return;
             }
@@ -151,7 +151,7 @@
             {
                 await Application.Current.MainPage.DisplayAlert(
                     Languages.Error,
-                    "You must enter a phone.",
+                    Languages.YouMostEnterPhone,
                     Languages.Accept);
                 return;
             }
@@ -160,7 +160,7 @@
             {
                 await Application.Current.MainPage.DisplayAlert(
                     Languages.Error,
-                    "You must enter a password.",
+                    Languages.YouMustPassword,
                     Languages.Accept);
                 return;
             }
@@ -169,7 +169,7 @@
             {
                 await Application.Current.MainPage.DisplayAlert(
                     Languages.Error,
-                    "The password must have at least seix (6) characters.",
+                    Languages.ThePasswordHaveSix,
                     Languages.Accept);
                 return;
             }
@@ -178,7 +178,7 @@
             {
                 await Application.Current.MainPage.DisplayAlert(
                     Languages.Error,
-                    "You must enter a confirm.",
+                    Languages.YouMustConfirm,
                     Languages.Accept);
                 return;
             }
@@ -187,7 +187,7 @@
             {
                 await Application.Current.MainPage.DisplayAlert(
                     Languages.Error,
-                    "The password and confirm does not match",
+                    Languages.ThePasswordNotMatch,
                     Languages.Accept);
                 return;
             }
@@ -246,8 +246,8 @@
             this.IsEnabled = true;
 
             await Application.Current.MainPage.DisplayAlert(
-                "Confirm",
-                "The user was create, now you can login with this email and password.",
+                Languages.ConfirmMessage,
+                Languages.TheUserWasCreate,
                 Languages.Accept);
             await Application.Current.MainPage.Navigation.PopAsync();
         }
@@ -260,19 +260,19 @@
                 CrossMedia.Current.IsTakePhotoSupported)
             {
                 var source = await Application.Current.MainPage.DisplayActionSheet(
-                    "Where do you want to take the image?",
-                    "Cancel",
+                    Languages.WhereDoYouWantImage,
+                    Languages.Cancel,
                     null,
-                    "From Gallery",
-                    "From Camera");
+                    Languages.FromGallery,
+                    Languages.FromCamera);
 
-                if (source == "Cancel")
+                if (source == Languages.Cancel)
                 {
                     this.file = null;
                     return;
                 }
 
-                if (source == "From Camera")
+                if (source == Languages.FromCamera)
                 {
                     this.file = await CrossMedia.Current.TakePhotoAsync(
                         new StoreCameraMediaOptions

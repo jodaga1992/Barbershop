@@ -2,10 +2,11 @@
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:i18n="clr-namespace:Barbershop.Helpers"
     xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
     x:Class="Barbershop.Views.BarberPage"
     BindingContext="{Binding Main, Source={StaticResource Locator}}"
-    Title="Schedules">
+    Title="{i18n:Translate SchedulesTitle}">
     <ContentPage.Content>
         <StackLayout
             BindingContext="{Binding Barber}"
