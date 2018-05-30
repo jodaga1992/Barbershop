@@ -91,18 +91,18 @@
             if (string.IsNullOrEmpty(this.Email))
             {
                 await Application.Current.MainPage.DisplayAlert(
-                    Languages.Error,
-                    Languages.YouMostEnterEmail,
-                    Languages.Accept);
+                    "Error",
+                    "You must enter an email",
+                    "Accept");
                 return;
             }
 
             if (string.IsNullOrEmpty(this.Email))
             {
                 await Application.Current.MainPage.DisplayAlert(
-                    Languages.Error,
-                    Languages.YouMustPassword,
-                    Languages.Accept);
+                    "Error",
+                    "You must enter a password",
+                    "Accept");
                 return;
             }
 
@@ -116,9 +116,9 @@
                 this.IsRunning = false;
                 this.IsEnabled = true;
                 await Application.Current.MainPage.DisplayAlert(
-                    Languages.Error,
+                    "Error",
                     connection.Message,
-                    Languages.Accept);
+                    "Accept");
                 return;
             }
             //barbershopgokuapi.azurewebsites.net
@@ -132,9 +132,9 @@
                 this.IsRunning = false;
                 this.IsEnabled = true;
                 await Application.Current.MainPage.DisplayAlert(
-                    Languages.Error,
-                    Languages.SomethingWasWrong,
-                    Languages.Accept);
+                    "Error",
+                    "Something was wrong, please try later",
+                    "Accept");
                 return;
             }
 
@@ -143,9 +143,9 @@
                 this.IsRunning = false;
                 this.IsEnabled = true;
                 await Application.Current.MainPage.DisplayAlert(
-                    Languages.Error,
+                    "Error",
                     token.ErrorDescription,
-                    Languages.Accept);
+                    "Accept");
                 this.Password = string.Empty;
                 return;
             }

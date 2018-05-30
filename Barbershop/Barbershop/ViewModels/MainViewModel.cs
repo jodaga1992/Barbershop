@@ -2,7 +2,6 @@
 {
     using System.Collections.ObjectModel;
     using Models;
-    using Helpers;
 
     public class MainViewModel : BaseViewModel
     {
@@ -121,21 +120,21 @@
             {
                 Icon = "setting",
                 PageName = "MyProfilePage",
-                Title = Languages.PerfilLabel
+                Title = "Perfil" //Languages.
             });
 
             this.Menus.Add(new MenuItemViewModel
             {
                 Icon = "ic_date_range",
                 PageName = "AppointmentsPage",
-                Title = Languages.MyAppointmentsLabel
+                Title = "My Appointments"
             });
 
             this.Menus.Add(new MenuItemViewModel
             {
                 Icon = "exit",
                 PageName = "LoginPage",
-                Title = Languages.LogOutLabel
+                Title = "LogOut"
             });
 
         }

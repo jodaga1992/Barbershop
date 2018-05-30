@@ -32,7 +32,7 @@
             if (this.PageName == "LoginPage")
             {
                 var answer = await Application.Current.MainPage.DisplayAlert(
-                Languages.ConfirmMessage, Languages.LeaveMessage, Languages.YesMessage, Languages.NoMessage);
+                "Confirmacion", "¿Seguro que desea salir", "Si", "No");
                 if (answer)
                 {
                     Settings.IsRemembered = "false";
