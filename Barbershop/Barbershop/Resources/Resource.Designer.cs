@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace barbershop.Resources {
+namespace Barbershop.Resources {
     using System;
     
     
@@ -60,10 +60,10 @@ namespace barbershop.Resources {
             }
         }
         
-                /// <summary>
+        /// <summary>
         ///   Looks up a localized string similar to Accept.
         /// </summary>
-        internal static string Accept {
+        public static string Accept {
             get {
                 return ResourceManager.GetString("Accept", resourceCulture);
             }
@@ -72,16 +72,25 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to The appointment was canceled.
         /// </summary>
-        internal static string AppointmentCanceled {
+        public static string AppointmentCanceled {
             get {
                 return ResourceManager.GetString("AppointmentCanceled", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Appointments.
+        /// </summary>
+        public static string AppointmentsTitle {
+            get {
+                return ResourceManager.GetString("AppointmentsTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The appointment was separated.
         /// </summary>
-        internal static string AppointmentWasseparated {
+        public static string AppointmentWasseparated {
             get {
                 return ResourceManager.GetString("AppointmentWasseparated", resourceCulture);
             }
@@ -90,7 +99,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Barbershop.
         /// </summary>
-        internal static string BarbershopTitle {
+        public static string BarbershopTitle {
             get {
                 return ResourceManager.GetString("BarbershopTitle", resourceCulture);
             }
@@ -99,7 +108,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Cancel.
         /// </summary>
-        internal static string Cancel {
+        public static string Cancel {
             get {
                 return ResourceManager.GetString("Cancel", resourceCulture);
             }
@@ -108,7 +117,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Are you sure you want to cancel this appointment?.
         /// </summary>
-        internal static string CancelAppointmentConfirm {
+        public static string CancelAppointmentConfirm {
             get {
                 return ResourceManager.GetString("CancelAppointmentConfirm", resourceCulture);
             }
@@ -117,7 +126,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Chage Password Confirm.
         /// </summary>
-        internal static string ChangeConfirPassword {
+        public static string ChangeConfirPassword {
             get {
                 return ResourceManager.GetString("ChangeConfirPassword", resourceCulture);
             }
@@ -126,7 +135,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Change Image.
         /// </summary>
-        internal static string ChangeImageLabel {
+        public static string ChangeImageLabel {
             get {
                 return ResourceManager.GetString("ChangeImageLabel", resourceCulture);
             }
@@ -135,7 +144,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Change Passwod.
         /// </summary>
-        internal static string ChangePasswordBtn {
+        public static string ChangePasswordBtn {
             get {
                 return ResourceManager.GetString("ChangePasswordBtn", resourceCulture);
             }
@@ -144,7 +153,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Change Password.
         /// </summary>
-        internal static string ChangePasswordTitle {
+        public static string ChangePasswordTitle {
             get {
                 return ResourceManager.GetString("ChangePasswordTitle", resourceCulture);
             }
@@ -153,7 +162,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Confirm.
         /// </summary>
-        internal static string ConfirmMessage {
+        public static string ConfirmMessage {
             get {
                 return ResourceManager.GetString("ConfirmMessage", resourceCulture);
             }
@@ -162,7 +171,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Confirm.
         /// </summary>
-        internal static string ConfirmPasswordLabel {
+        public static string ConfirmPasswordLabel {
             get {
                 return ResourceManager.GetString("ConfirmPasswordLabel", resourceCulture);
             }
@@ -171,7 +180,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Confirm.
         /// </summary>
-        internal static string ConfirmPasswordPlaceholder {
+        public static string ConfirmPasswordPlaceholder {
             get {
                 return ResourceManager.GetString("ConfirmPasswordPlaceholder", resourceCulture);
             }
@@ -180,7 +189,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Current Password.
         /// </summary>
-        internal static string CurrentePasswordPlaceholder {
+        public static string CurrentePasswordPlaceholder {
             get {
                 return ResourceManager.GetString("CurrentePasswordPlaceholder", resourceCulture);
             }
@@ -189,7 +198,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Change Password.
         /// </summary>
-        internal static string CurrentPasswordLabel {
+        public static string CurrentPasswordLabel {
             get {
                 return ResourceManager.GetString("CurrentPasswordLabel", resourceCulture);
             }
@@ -198,7 +207,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Email.
         /// </summary>
-        internal static string EmailLabel {
+        public static string EmailLabel {
             get {
                 return ResourceManager.GetString("EmailLabel", resourceCulture);
             }
@@ -207,7 +216,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Email.
         /// </summary>
-        internal static string EmailPlaceHolder {
+        public static string EmailPlaceHolder {
             get {
                 return ResourceManager.GetString("EmailPlaceHolder", resourceCulture);
             }
@@ -216,7 +225,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Validar email.
         /// </summary>
-        internal static string EmailValidation {
+        public static string EmailValidation {
             get {
                 return ResourceManager.GetString("EmailValidation", resourceCulture);
             }
@@ -225,7 +234,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Error.
         /// </summary>
-        internal static string Error {
+        public static string Error {
             get {
                 return ResourceManager.GetString("Error", resourceCulture);
             }
@@ -234,7 +243,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Error Changing Password.
         /// </summary>
-        internal static string ErrorChargingPassword {
+        public static string ErrorChargingPassword {
             get {
                 return ResourceManager.GetString("ErrorChargingPassword", resourceCulture);
             }
@@ -243,7 +252,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to First Name.
         /// </summary>
-        internal static string FirstNameLabel {
+        public static string FirstNameLabel {
             get {
                 return ResourceManager.GetString("FirstNameLabel", resourceCulture);
             }
@@ -252,7 +261,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to First Name.....
         /// </summary>
-        internal static string FirstNamePlaceholder {
+        public static string FirstNamePlaceholder {
             get {
                 return ResourceManager.GetString("FirstNamePlaceholder", resourceCulture);
             }
@@ -261,7 +270,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to forgot your password ?.
         /// </summary>
-        internal static string ForgotPasswordLabel {
+        public static string ForgotPasswordLabel {
             get {
                 return ResourceManager.GetString("ForgotPasswordLabel", resourceCulture);
             }
@@ -270,7 +279,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to FromCamera.
         /// </summary>
-        internal static string FromCamera {
+        public static string FromCamera {
             get {
                 return ResourceManager.GetString("FromCamera", resourceCulture);
             }
@@ -279,7 +288,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to From Gallery.
         /// </summary>
-        internal static string FromGallery {
+        public static string FromGallery {
             get {
                 return ResourceManager.GetString("FromGallery", resourceCulture);
             }
@@ -288,7 +297,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Last Name.
         /// </summary>
-        internal static string LastNameLabel {
+        public static string LastNameLabel {
             get {
                 return ResourceManager.GetString("LastNameLabel", resourceCulture);
             }
@@ -297,7 +306,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Last Name.
         /// </summary>
-        internal static string LastNameLabel1 {
+        public static string LastNameLabel1 {
             get {
                 return ResourceManager.GetString("LastNameLabel1", resourceCulture);
             }
@@ -306,7 +315,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Last Name....
         /// </summary>
-        internal static string LastNamePlaceholder {
+        public static string LastNamePlaceholder {
             get {
                 return ResourceManager.GetString("LastNamePlaceholder", resourceCulture);
             }
@@ -315,7 +324,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Last Name....
         /// </summary>
-        internal static string LastNamePlaceholder1 {
+        public static string LastNamePlaceholder1 {
             get {
                 return ResourceManager.GetString("LastNamePlaceholder1", resourceCulture);
             }
@@ -324,7 +333,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Are you sure you want to leave?.
         /// </summary>
-        internal static string LeaveMessage {
+        public static string LeaveMessage {
             get {
                 return ResourceManager.GetString("LeaveMessage", resourceCulture);
             }
@@ -333,7 +342,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Loading....
         /// </summary>
-        internal static string LoadingLabel {
+        public static string LoadingLabel {
             get {
                 return ResourceManager.GetString("LoadingLabel", resourceCulture);
             }
@@ -342,7 +351,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Login.
         /// </summary>
-        internal static string LoginBtn {
+        public static string LoginBtn {
             get {
                 return ResourceManager.GetString("LoginBtn", resourceCulture);
             }
@@ -351,7 +360,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Login.
         /// </summary>
-        internal static string LoginTitle {
+        public static string LoginTitle {
             get {
                 return ResourceManager.GetString("LoginTitle", resourceCulture);
             }
@@ -360,7 +369,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Log Out.
         /// </summary>
-        internal static string LogOutLabel {
+        public static string LogOutLabel {
             get {
                 return ResourceManager.GetString("LogOutLabel", resourceCulture);
             }
@@ -369,7 +378,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Menu.
         /// </summary>
-        internal static string MenuTitle {
+        public static string MenuTitle {
             get {
                 return ResourceManager.GetString("MenuTitle", resourceCulture);
             }
@@ -378,7 +387,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to My appointments.
         /// </summary>
-        internal static string MyAppointmentsLabel {
+        public static string MyAppointmentsLabel {
             get {
                 return ResourceManager.GetString("MyAppointmentsLabel", resourceCulture);
             }
@@ -387,7 +396,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to My Profile.
         /// </summary>
-        internal static string MyProfileTitle {
+        public static string MyProfileTitle {
             get {
                 return ResourceManager.GetString("MyProfileTitle", resourceCulture);
             }
@@ -396,7 +405,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Name.
         /// </summary>
-        internal static string NameLabel {
+        public static string NameLabel {
             get {
                 return ResourceManager.GetString("NameLabel", resourceCulture);
             }
@@ -405,7 +414,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Name....
         /// </summary>
-        internal static string NamePlaceholder {
+        public static string NamePlaceholder {
             get {
                 return ResourceManager.GetString("NamePlaceholder", resourceCulture);
             }
@@ -414,7 +423,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to New Password.
         /// </summary>
-        internal static string NewPasswordLabel {
+        public static string NewPasswordLabel {
             get {
                 return ResourceManager.GetString("NewPasswordLabel", resourceCulture);
             }
@@ -423,7 +432,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to New Password.
         /// </summary>
-        internal static string NewPasswordPlaceholder {
+        public static string NewPasswordPlaceholder {
             get {
                 return ResourceManager.GetString("NewPasswordPlaceholder", resourceCulture);
             }
@@ -432,7 +441,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to No.
         /// </summary>
-        internal static string NoMessage {
+        public static string NoMessage {
             get {
                 return ResourceManager.GetString("NoMessage", resourceCulture);
             }
@@ -441,7 +450,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Enter your password.
         /// </summary>
-        internal static string PasswordEnterPlaceholder {
+        public static string PasswordEnterPlaceholder {
             get {
                 return ResourceManager.GetString("PasswordEnterPlaceholder", resourceCulture);
             }
@@ -450,7 +459,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Password.
         /// </summary>
-        internal static string PasswordLabel {
+        public static string PasswordLabel {
             get {
                 return ResourceManager.GetString("PasswordLabel", resourceCulture);
             }
@@ -459,7 +468,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Perfil.
         /// </summary>
-        internal static string PerfilLabel {
+        public static string PerfilLabel {
             get {
                 return ResourceManager.GetString("PerfilLabel", resourceCulture);
             }
@@ -468,7 +477,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Phone.
         /// </summary>
-        internal static string PhoneLabel {
+        public static string PhoneLabel {
             get {
                 return ResourceManager.GetString("PhoneLabel", resourceCulture);
             }
@@ -477,7 +486,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Phone.....
         /// </summary>
-        internal static string PhonePlaceholder {
+        public static string PhonePlaceholder {
             get {
                 return ResourceManager.GetString("PhonePlaceholder", resourceCulture);
             }
@@ -486,7 +495,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Register.
         /// </summary>
-        internal static string RegisterBtn {
+        public static string RegisterBtn {
             get {
                 return ResourceManager.GetString("RegisterBtn", resourceCulture);
             }
@@ -495,16 +504,25 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Register.
         /// </summary>
-        internal static string RegisterTitle {
+        public static string RegisterTitle {
             get {
                 return ResourceManager.GetString("RegisterTitle", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Remember me on this device.
+        /// </summary>
+        public static string RememberOnDevice {
+            get {
+                return ResourceManager.GetString("RememberOnDevice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Save.
         /// </summary>
-        internal static string SaveBtn {
+        public static string SaveBtn {
             get {
                 return ResourceManager.GetString("SaveBtn", resourceCulture);
             }
@@ -513,7 +531,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Schedules.
         /// </summary>
-        internal static string SchedulesTitle {
+        public static string SchedulesTitle {
             get {
                 return ResourceManager.GetString("SchedulesTitle", resourceCulture);
             }
@@ -522,7 +540,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Do you want to separate this appointment?.
         /// </summary>
-        internal static string SeparateAppointmentConfirm {
+        public static string SeparateAppointmentConfirm {
             get {
                 return ResourceManager.GetString("SeparateAppointmentConfirm", resourceCulture);
             }
@@ -531,7 +549,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Something was wrong, please try later.
         /// </summary>
-        internal static string SomethingWasWrong {
+        public static string SomethingWasWrong {
             get {
                 return ResourceManager.GetString("SomethingWasWrong", resourceCulture);
             }
@@ -540,7 +558,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Statistics.
         /// </summary>
-        internal static string StatisticsLabel {
+        public static string StatisticsLabel {
             get {
                 return ResourceManager.GetString("StatisticsLabel", resourceCulture);
             }
@@ -549,7 +567,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to The password must have at least seix (6) characters.
         /// </summary>
-        internal static string ThePasswordHaveSix {
+        public static string ThePasswordHaveSix {
             get {
                 return ResourceManager.GetString("ThePasswordHaveSix", resourceCulture);
             }
@@ -558,7 +576,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to The password and confirm does not match.
         /// </summary>
-        internal static string ThePasswordNotMatch {
+        public static string ThePasswordNotMatch {
             get {
                 return ResourceManager.GetString("ThePasswordNotMatch", resourceCulture);
             }
@@ -567,7 +585,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to The user was create, now you can login with this email and password.
         /// </summary>
-        internal static string TheUserWasCreate {
+        public static string TheUserWasCreate {
             get {
                 return ResourceManager.GetString("TheUserWasCreate", resourceCulture);
             }
@@ -576,7 +594,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to touch to change image.
         /// </summary>
-        internal static string TouchChangeImage {
+        public static string TouchChangeImage {
             get {
                 return ResourceManager.GetString("TouchChangeImage", resourceCulture);
             }
@@ -585,7 +603,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Where do you want to take the image?.
         /// </summary>
-        internal static string WhereDoYouWantImage {
+        public static string WhereDoYouWantImage {
             get {
                 return ResourceManager.GetString("WhereDoYouWantImage", resourceCulture);
             }
@@ -594,7 +612,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Yes.
         /// </summary>
-        internal static string YesMessage {
+        public static string YesMessage {
             get {
                 return ResourceManager.GetString("YesMessage", resourceCulture);
             }
@@ -603,7 +621,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to You must enter a confirm.
         /// </summary>
-        internal static string YouMostConfirPassword {
+        public static string YouMostConfirPassword {
             get {
                 return ResourceManager.GetString("YouMostConfirPassword", resourceCulture);
             }
@@ -612,7 +630,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to You must enter an email.
         /// </summary>
-        internal static string YouMostEnterEmail {
+        public static string YouMostEnterEmail {
             get {
                 return ResourceManager.GetString("YouMostEnterEmail", resourceCulture);
             }
@@ -621,7 +639,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to You must enter a valid email.
         /// </summary>
-        internal static string YouMostEnterEmailValid {
+        public static string YouMostEnterEmailValid {
             get {
                 return ResourceManager.GetString("YouMostEnterEmailValid", resourceCulture);
             }
@@ -630,7 +648,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to You must enter a phone.
         /// </summary>
-        internal static string YouMostEnterPhone {
+        public static string YouMostEnterPhone {
             get {
                 return ResourceManager.GetString("YouMostEnterPhone", resourceCulture);
             }
@@ -639,7 +657,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to You must enter a first name.
         /// </summary>
-        internal static string YouMostFirstName {
+        public static string YouMostFirstName {
             get {
                 return ResourceManager.GetString("YouMostFirstName", resourceCulture);
             }
@@ -648,7 +666,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to You must enter a confirm.
         /// </summary>
-        internal static string YouMustConfirm {
+        public static string YouMustConfirm {
             get {
                 return ResourceManager.GetString("YouMustConfirm", resourceCulture);
             }
@@ -657,7 +675,7 @@ namespace barbershop.Resources {
         /// <summary>
         ///   Looks up a localized string similar to You must enter a password.
         /// </summary>
-        internal static string YouMustPassword {
+        public static string YouMustPassword {
             get {
                 return ResourceManager.GetString("YouMustPassword", resourceCulture);
             }

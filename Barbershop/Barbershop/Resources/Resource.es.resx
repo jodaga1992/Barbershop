@@ -136,7 +136,7 @@
     <value>Email</value>
   </data>
   <data name="EmailPlaceHolder" xml:space="preserve">
-    <value>Email</value>
+    <value>Email...</value>
   </data>
   <data name="EmailValidation" xml:space="preserve">
     <value>Validar correo electrónico</value>
@@ -211,7 +211,7 @@
     <value>Confirmar</value>
   </data>
   <data name="ConfirmPasswordPlaceholder" xml:space="preserve">
-    <value>Confirmar</value>
+    <value>Confirmar...</value>
   </data>
   <data name="CurrentePasswordPlaceholder" xml:space="preserve">
     <value>Password Actual</value>
@@ -241,7 +241,7 @@
     <value>Nombre</value>
   </data>
   <data name="NamePlaceholder" xml:space="preserve">
-    <value>Nombre</value>
+    <value>Nombre...</value>
   </data>
   <data name="PhonePlaceholder" xml:space="preserve">
     <value>Telefono..</value>
@@ -317,5 +317,11 @@
   </data>
   <data name="SeparateAppointmentConfirm" xml:space="preserve">
     <value>¿Desea separar esta cita?</value>
+  </data>
+  <data name="AppointmentsTitle" xml:space="preserve">
+    <value>Citas</value>
+  </data>
+  <data name="RememberOnDevice" xml:space="preserve">
+    <value>Recordarme en este dispositivo</value>
   </data>
 </root>

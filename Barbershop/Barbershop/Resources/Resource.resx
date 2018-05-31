@@ -318,4 +318,10 @@
   <data name="SeparateAppointmentConfirm" xml:space="preserve">
     <value>Do you want to separate this appointment?</value>
   </data>
+  <data name="AppointmentsTitle" xml:space="preserve">
+    <value>Appointments</value>
+  </data>
+  <data name="RememberOnDevice" xml:space="preserve">
+    <value>Remember me on this device</value>
+  </data>
 </root>

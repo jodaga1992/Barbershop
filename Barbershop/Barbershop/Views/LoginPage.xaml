@@ -61,7 +61,7 @@
                         VerticalOptions="CenterAndExpand">
                             <Label
                                  HorizontalOptions="StartAndExpand"
-                                 Text="Remember on this divice"
+                                 Text="{i18n:Translate RememberOnDevice}"
                                  VerticalOptions="Center">
                             </Label>
                             <Switch

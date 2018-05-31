@@ -6,7 +6,7 @@ namespace Barbershop.Helpers
 {
     using Xamarin.Forms;
     using Interfaces;
-    using barbershop.Resources;
+    using Resources;
 
     public static class Languages
     {
@@ -335,6 +335,16 @@ namespace Barbershop.Helpers
         public static string AppointmentCanceled
         {
             get { return Resource.AppointmentCanceled; }
+        }
+
+        public static string AppointmentsTitle
+        {
+            get { return Resource.AppointmentsTitle; }
+        }
+
+        public static string RememberOnDevice
+        {
+            get { return Resource.RememberOnDevice; }
         }
         
     }
